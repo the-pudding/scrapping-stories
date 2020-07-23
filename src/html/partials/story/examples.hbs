@@ -1,0 +1,22 @@
+<section class='examples'>
+    {{#each doc.questions}}
+    <div class='examples--steps' id={{{key}}} data-js={{{key}}}>
+
+        <h2>{{{question}}}</h2>
+        {{#each sectionIntro}}
+        <p class='prose'>{{{this}}}</p>
+        {{/each}}
+
+        {{#each examples}}
+        <h3>{{{exTitle}}}</h3>
+        <ul>
+            {{#each stories}}
+            <li class='story'>{{{this}}}</li>
+            {{/each}}
+        </ul>
+
+        {{/each}}
+
+    </div>
+    {{/each}}
+</section>

@@ -1,0 +1,787 @@
+<!doctype html>
+<html lang='en' data-version='1595544650147'>
+
+<head>
+
+	<title>When to scrap your data story</title>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+	<meta name='description' content='A walk through The Pudding&#x27;s story graveyard' />
+	<meta name='news_keywords' content='tk' />
+	
+	<meta property='og:title' content='When to scrap your data story' />
+	<meta property='og:site_name' content='The Pudding' />
+	<meta property='og:url' content='https://pudding.cool/year/month/name/' />
+	<meta property='og:description' content='A walk through The Pudding&#x27;s story graveyard' />
+	<meta property='og:type' content='article' />
+	<meta property='og:locale' content='en_US' />
+	
+	<meta property='og:image' content='https://pudding.cool/year/month/name/assets/social/social-facebook.jpg' />
+	<meta property='og:image:type' content='image/jpeg' />
+	<meta property='og:image:width' content='1200' />
+	<meta property='og:image:height' content='600' />
+	
+	<meta name='twitter:card' content='summary_large_image' />
+	<meta name='twitter:site' content='https://pudding.cool' />
+	<meta name='twitter:creator' content='@proquesasker' />
+	<meta name='twitter:title' content='When to scrap your data story' />
+	<meta name='twitter:description' content='A walk through The Pudding&#x27;s story graveyard' />
+	<meta name='twitter:image:src' content='https://pudding.cool/year/month/name/assets/social/social-twitter.jpg' />
+	
+	<link rel='canonical' href='https://pudding.cool/year/month/name/' />
+	
+	<link rel='apple-touch-icon' sizes='180x180' href='https://pudding.cool/apple-touch-icon.png'>
+	<link rel='icon' type='image/png' sizes='32x32' href='https://pudding.cool/favicon-32x32.png'>
+	<link rel='icon' type='image/png' sizes='16x16' href='https://pudding.cool/favicon-16x16.png'>
+	<link rel='manifest' href='https://pudding.cool/site.webmanifest'>
+	<link rel='mask-icon' href='https://pudding.cool/safari-pinned-tab.svg' color='#5bbad5'>
+	<meta name='msapplication-TileColor' content='#ffc40d'>
+	<meta name='theme-color' content='#ffffff'>
+	<link rel='preload' type='font/woff2' as='font' crossorigin
+		href='https://pudding.cool/assets/fonts/national/National2Web-Regular.woff2'>
+	<link rel='preload' type='font/woff2' as='font' crossorigin
+		href='https://pudding.cool/assets/fonts/national/National2Web-Bold.woff2'>
+	<link rel='preload' type='font/woff2' as='font' crossorigin
+		href='https://pudding.cool/assets/fonts/national/National2NarrowWeb-Regular.woff2'>
+	<link rel='preload' type='font/woff2' as='font' crossorigin
+		href='https://pudding.cool/assets/fonts/national/National2NarrowWeb-Bold.woff2'>
+	<link rel='preload' type='font/woff2' as='font' crossorigin
+		href='https://pudding.cool/assets/fonts/tiempos/TiemposTextWeb-Regular.woff2'>
+	<link rel='preload' type='font/woff2' as='font' crossorigin
+		href='https://pudding.cool/assets/fonts/tiempos/TiemposTextWeb-Bold.woff2'>
+
+	<style>*{-webkit-box-sizing:border-box;box-sizing:border-box}html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}a img{border:none}blockquote{quotes:none}blockquote:before,blockquote:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}caption,th,td{text-align:left;font-weight:normal;vertical-align:middle}.xxx-small{font-size:10px;line-height:1.65}.xx-small{font-size:11px;line-height:1.65}.x-small{font-size:12px;line-height:1.65}.small{font-size:14px;line-height:1.65}.root{font-size:16px;line-height:1.65}.medium{font-size:18px;line-height:1.65}.large{font-size:20px;line-height:1.5}.x-large{font-size:24px;line-height:1.4}.xx-large{font-size:32px;line-height:1.4}.xxx-large{font-size:40px;line-height:1.4}.xxxx-large{font-size:48px;line-height:1.2}.xxxxx-large{font-size:64px;line-height:1.2}.hide-accessible{width:1px;height:1px;overflow:hidden;position:absolute}.hide-invisible{visibility:hidden}.hide-display{display:none}.skip-to-main{border:none;width:1px;height:1px;overflow:hidden;position:absolute}.skip-to-main:focus{width:auto;height:auto;background-color:#f4f4f4;padding:.5rem;z-index:1000}.prose{max-width:40rem;margin:1rem auto;padding:0 1rem}.media-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkRDMDBGQ0Y5NEI4NjExRTM5RTg2QTY1RTUyQjIxNEQyIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkRDMDBGQ0ZBNEI4NjExRTM5RTg2QTY1RTUyQjIxNEQyIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6REMwMEZDRjc0Qjg2MTFFMzlFODZBNjVFNTJCMjE0RDIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6REMwMEZDRjg0Qjg2MTFFMzlFODZBNjVFNTJCMjE0RDIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6C0EmkAAAAGElEQVR42mJiYGD4DwQMTECCEchhAAgwAEcGBv9dngKPAAAAAElFTkSuQmCC")}#starter-guide{max-width:40rem;margin:0 auto}body{-webkit-font-feature-settings:'kern' 1,'onum' 0,'liga' 0,'tnum' 1;font-feature-settings:'kern' 1,'onum' 0,'liga' 0,'tnum' 1;-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:rgba(0,0,0,0);background-color:#fff;color:#282828;font-weight:500;font-family:'Tiempos Text Web',Georgia,Times,serif;font-size:16px}@media only screen and (min-width:30em){body{font-size:18px}}h1{font-size:32px;line-height:1.4;margin-top:1.5rem}h2{font-size:24px;line-height:1.4;margin-top:1.5rem}h3{font-size:20px;line-height:1.5;margin-top:1.5rem}h4{font-size:18px;line-height:1.65;margin-top:1.5rem}h5{font-size:16px;line-height:1.65;margin-top:1.5rem}h6{font-size:14px;line-height:1.65;margin-top:1.5rem}p{margin:1.5rem 0;font-size:16px;line-height:1.65}@media only screen and (min-width:30em){p{font-size:18px;line-height:1.65}}a{text-decoration:none;border-bottom:1px solid #282828;color:#282828}a:visited,a:hover{color:#282828}strong,b{font-weight:700}em,i{font-style:italic}ul{list-style-type:none}li{font-size:16px}@media only screen and (min-width:30em){li{font-size:18px}}img,video{display:block;width:100%}button{cursor:pointer;border:none;outline:none;margin:0;padding:0;font-size:16px}@media only screen and (min-width:30em){button{font-size:18px}}sub,sup{font-size:.75rem;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}footer.pudding-footer{padding:3rem 1rem;border-top:4px solid #000;font-family:'National 2 Web',Helvetica,Arial,sans-serif;margin-top:3rem}footer.pudding-footer .footer-recirc{max-width:65rem;margin:0 auto}footer.pudding-footer .footer-recirc__articles{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}footer.pudding-footer .footer-recirc__article{display:block;width:100%;border:none;margin-bottom:2rem}@media only screen and (min-width:50em){footer.pudding-footer .footer-recirc__article{width:calc(25% - 1.5rem);margin-right:1.5rem}footer.pudding-footer .footer-recirc__article:last-of-type{margin-right:0}}footer.pudding-footer .footer-recirc .article__headline{font-family:'National 2 Narrow Web',Helvetica,Arial,sans-serif;font-size:20px;line-height:1;font-weight:700;padding-left:.5rem}footer.pudding-footer .footer-company{margin:0 auto;margin-top:3rem;max-width:65rem;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;font-family:'National 2 Narrow Web',Helvetica,Arial,sans-serif}@media only screen and (min-width:50em){footer.pudding-footer .footer-company{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}}footer.pudding-footer .footer-company__cta{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1;margin:2rem 0 0 0;width:100%}@media only screen and (min-width:50em){footer.pudding-footer .footer-company__cta{width:22rem;margin:0 0 0 2rem}}footer.pudding-footer .footer-company__cta-list{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;height:12rem}@media only screen and (min-width:50em){footer.pudding-footer .footer-company__cta-list{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}}footer.pudding-footer .footer-company__cta-list li{display:-webkit-box;display:-ms-flexbox;display:flex;width:50%;margin-bottom:1rem;-webkit-box-align:center;-ms-flex-align:center;align-items:center}@media only screen and (min-width:50em){footer.pudding-footer .footer-company__cta-list li{padding-left:1rem}}footer.pudding-footer .footer-company__cta-list li a{display:-webkit-box;display:-ms-flexbox;display:flex;border:none}footer.pudding-footer .footer-company__cta-list li p{font-family:'National 2 Narrow Web',Helvetica,Arial,sans-serif;margin:0;padding-left:.5rem;padding-top:.1rem;line-height:1;color:#949494}@media only screen and (min-width:40em){footer.pudding-footer .footer-company__cta-list li p{font-size:20px}}footer.pudding-footer .footer-company__cta-list li svg{fill:#949494;stroke:none;vertical-align:middle}footer.pudding-footer .footer-company__cta-list li svg circle,footer.pudding-footer .footer-company__cta-list li svg polyline,footer.pudding-footer .footer-company__cta-list li svg line{fill:none;stroke:#949494}footer.pudding-footer .footer-company__cta-list li .feather-mail path,footer.pudding-footer .footer-company__cta-list li .feather-lock path,footer.pudding-footer .footer-company__cta-list li .feather-rss path{stroke:#949494;fill:none}footer.pudding-footer .footer-company__about{-webkit-box-ordinal-group:1;-ms-flex-order:0;order:0;width:100%;color:#949494;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}@media only screen and (min-width:50em){footer.pudding-footer .footer-company__about{width:calc(100% - 24rem)}}footer.pudding-footer .footer-company__about p{margin:0;font-size:16px;line-height:1.4}footer.pudding-footer .footer-company__about svg{width:12rem;margin-bottom:.5rem}header{z-index:1000;position:absolute;top:0;left:0;width:100%;background-color:#fff;font-family:'National 2 Web',Helvetica,Arial,sans-serif}header a.logo{display:block;border:none;max-width:9rem;margin:1rem auto}header a.logo svg{fill:#282828;display:block;width:100%}header.is-sticky{position:fixed;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0);background-color:#fff;-webkit-box-shadow:0 0 7px 1px #c9c9c9;box-shadow:0 0 7px 1px #c9c9c9;height:3rem;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}header.is-sticky a.logo{margin:0 auto}header.is-sticky .header__toggle{position:fixed;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0);top:0;right:0;padding:.75rem;cursor:pointer;line-height:1;z-index:1000;border:none;background-color:transparent}header.is-sticky .header__toggle svg{stroke:#282828}header.is-sticky .header__toggle span:first-of-type{display:block}header.is-sticky .header__toggle span:last-of-type{display:none}header.is-sticky .header__toggle.is-visible span:first-of-type{display:none}header.is-sticky .header__toggle.is-visible span:last-of-type{display:block}header.is-sticky .header__toggle.is-visible span svg{stroke:#f4f4f4}header.is-sticky .header__menu{position:fixed;top:0;right:0;-webkit-transform:translateX(100%);-ms-transform:translateX(100%);transform:translateX(100%);height:100vh;width:100%;max-width:30rem;padding:1rem 1.5rem;background-color:#282828;color:#f4f4f4;z-index:1000;-webkit-transition:-webkit-transform 200ms ease-in-out;transition:-webkit-transform 200ms ease-in-out;-o-transition:transform 200ms ease-in-out;transition:transform 200ms ease-in-out;transition:transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out}@media only screen and (min-width:30em){header.is-sticky .header__menu{border-left:1px solid #5b5b5b}}header.is-sticky .header__menu.is-visible{-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0)}header.is-sticky .header__menu a{color:#f4f4f4;border-bottom:1px solid #f4f4f4}header.is-sticky .header__menu a:hover{color:#c9c9c9}header.is-sticky .header__menu .menu__links{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}@media only screen and (min-width:40em){header.is-sticky .header__menu .menu__links{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}}header.is-sticky .header__menu .menu__links li{font-family:'National 2 Narrow Web',Helvetica,Arial,sans-serif;font-weight:700;text-transform:uppercase;margin-bottom:.5em;margin-right:.5em;font-size:20px}@media only screen and (min-width:30em){header.is-sticky .header__menu .menu__links li{font-size:24px}}header.is-sticky .header__menu a.patreon-link{font-family:'National 2 Narrow Web',Helvetica,Arial,sans-serif;font-weight:700;text-transform:uppercase;border:none;background-color:#f4f4f4;color:#282828;padding:.5em .75em}header.is-sticky .header__menu a.patreon-link:hover{opacity:.75}header.is-sticky .menu__patrons ul{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}header.is-sticky .menu__patrons li:after{display:inline;content:',';margin-right:.25em}header.is-sticky .menu__patrons li:last-of-type:after{content:'.'}header.is-sticky.is-dark{background-color:#282828;-webkit-box-shadow:0 0 7px 1px #5b5b5b;box-shadow:0 0 7px 1px #5b5b5b}header.is-sticky.is-dark svg path{fill:#f4f4f4}header.is-sticky.is-dark .header__menu{background-color:#fff;color:#282828}@media only screen and (min-width:30em){header.is-sticky.is-dark .header__menu{border-left:1px solid #c9c9c9}}header.is-sticky.is-dark a{color:#282828;border-bottom:1px solid #282828}header.is-sticky.is-dark a:hover{color:#5b5b5b}header.is-sticky.is-dark .header__toggle svg{stroke:#f4f4f4}header.is-sticky.is-dark .header__toggle.is-visible span svg{stroke:#282828}.intro{margin:0 auto;padding:6rem 1rem 3rem 1rem}.intro__hed{margin:0 auto;text-align:center}.intro__dek{max-width:40rem;margin:0 auto;margin-top:1rem;text-align:center}.intro__byline{max-width:40rem;margin:0 auto;margin-top:1rem;text-align:center}.intro__time{display:block;max-width:40rem;margin:0 auto;margin-top:1rem;text-align:center}h1{font-size:64px;font-weight:700;font-family:'Tiempos Text Web';color:#6765e6;line-height:1;max-width:40rem}.intro__dek{font-family:'National 2 Web';font-size:24px;margin-top:2rem}.intro__row{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;max-width:40rem;margin:1rem auto 4rem;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.intro__row p,.intro__row time{font-family:'National 2 Narrow Web';margin:0;padding:0 1rem}h2,h3{max-width:40rem;font-weight:700;margin:0 auto;padding:0 1rem;text-align:left}h2{color:#6765e6;font-size:32px}h3{font-size:20px;margin-top:3rem}ul{max-width:40rem;margin:0 auto;padding:0 1rem}li{margin:1rem 0;line-height:1.65;list-style-type:none}li::before{content:'\2022';color:#6765e6;font-weight:bold;display:inline-block;width:1em;margin-left:-1em}.flowchart{max-width:900px;margin:5rem auto;padding:0 1rem}svg tspan{font-family:'National 2 Narrow Web'}.minimap{display:none;position:fixed;border-radius:5px;top:50px;left:0;-webkit-box-shadow:-3px 5px 17px #c8c8c8;box-shadow:-3px 5px 17px #c8c8c8;-webkit-transform:translate(-200px,0);-ms-transform:translate(-200px,0);transform:translate(-200px,0);-webkit-transition:-webkit-transform 300ms ease-in-out;transition:-webkit-transform 300ms ease-in-out;-o-transition:transform 300ms ease-in-out;transition:transform 300ms ease-in-out;transition:transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out}@media only screen and (min-width:60em){.minimap{display:block}}.minimap.is-visible{-webkit-transform:translate(0,0);-ms-transform:translate(0,0);transform:translate(0,0);-webkit-transition:-webkit-transform 300ms ease-in-out;transition:-webkit-transform 300ms ease-in-out;-o-transition:transform 300ms ease-in-out;transition:transform 300ms ease-in-out;transition:transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out}.examples--steps{margin-top:5rem}</style>
+
+	<style>
+		/*
+	        This font software is the property of Commercial Type.
+	
+	        You may not modify the font software, use it on another website, or install it on a computer.
+	
+	        License information is available at http://commercialtype.com/eula
+	        For more information please visit Commercial Type at http://commercialtype.com or email us at info[at]commercialtype.com
+	
+	        Copyright (C) 2017 Schwartzco Inc.
+	        License: 1704-GNCLGK
+	*/
+	
+		/*
+		********************
+			National
+		********************
+		*/
+	
+		@font-face {
+			font-family: 'National 2 Web';
+			src: url('https://pudding.cool/assets/fonts/national/National2Web-Regular.woff2') format('woff2'),
+			url('https://pudding.cool/assets/fonts/national/National2Web-Regular.woff') format('woff');
+			font-weight: 500;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: swap;
+		}
+	
+		@font-face {
+			font-family: 'National 2 Web';
+			src: url('https://pudding.cool/assets/fonts/national/National2Web-Bold.woff2') format('woff2'),
+			url('https://pudding.cool/assets/fonts/national/National2Web-Bold.woff') format('woff');
+			font-weight: 700;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: swap;
+		}
+	
+		/*
+		********************
+			National Narrow
+		********************
+		*/
+	
+		/*
+		@font-face {
+			font-family: 'National 2 Narrow Web';
+			src: url('https://pudding.cool/assets/fonts/national/National2NarrowWeb-Extralight.woff2') format('woff2'),
+			url('https://pudding.cool/assets/fonts/national/National2NarrowWeb-Extralight.woff') format('woff');
+			font-weight: 200;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: swap;
+		}
+		*/
+		
+		@font-face {
+			font-family: 'National 2 Narrow Web';
+			src: url('https://pudding.cool/assets/fonts/national/National2NarrowWeb-Regular.woff2') format('woff2'),
+			url('https://pudding.cool/assets/fonts/national/National2NarrowWeb-Regular.woff') format('woff');
+			font-weight: 500;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: swap;
+		}
+	
+		@font-face {
+			font-family: 'National 2 Narrow Web';
+			src: url('https://pudding.cool/assets/fonts/national/National2NarrowWeb-Bold.woff2') format('woff2'),
+			url('https://pudding.cool/assets/fonts/national/National2NarrowWeb-Bold.woff') format('woff');
+			font-weight: 700;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: swap;
+		}
+	
+		/*
+		@font-face {
+			font-family: 'National 2 Narrow Web';
+			src: url('https://pudding.cool/assets/fonts/national/National2NarrowWeb-Black.woff2') format('woff2'),
+			url('https://pudding.cool/assets/fonts/national/National2NarrowWeb-Black.woff') format('woff');
+			font-weight: 900;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: swap;
+		}
+		*/
+	
+		/*
+		********************
+			Tiempos Text
+		********************
+		*/
+	
+		@font-face {
+			font-family: 'Tiempos Text Web';
+			src: url('https://pudding.cool/assets/fonts/tiempos/TiemposTextWeb-Regular.woff2') format('woff2'),
+			url('https://pudding.cool/assets/fonts/tiempos/TiemposTextWeb-Regular.woff') format('woff');
+			font-weight: 500;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: swap;
+		}
+	
+		@font-face {
+			font-family: 'Tiempos Text Web';
+			src: url('https://pudding.cool/assets/fonts/tiempos/TiemposTextWeb-Bold.woff2') format('woff2'),
+			url('https://pudding.cool/assets/fonts/tiempos/TiemposTextWeb-Bold.woff') format('woff');
+			font-weight: 700;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: swap;
+		}
+	
+		/*
+		********************
+			Tiempos Headline
+		********************
+		*/
+	
+		/*
+		@font-face {
+			font-family: 'Tiempos Headline Web';
+			src: url('https://pudding.cool/assets/fonts/tiempos/TiemposHeadlineWeb-Regular.woff2') format('woff2'),
+			url('https://pudding.cool/assets/fonts/tiempos/TiemposHeadlineWeb-Regular.woff') format('woff');
+			font-weight: 500;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: swap;
+		}
+		*/
+		
+		/*
+		********************
+			Publico Text
+		********************
+		*/
+		/*
+		@font-face {
+			font-family: 'Publico Text Web';
+			src: url('https://pudding.cool/assets/fonts/publico/PublicoText-Roman-Web.woff2') format('woff2'),
+			url('https://pudding.cool/assets/fonts/publico/PublicoText-Roman-Web.woff') format('woff');
+			font-weight: 400;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: swap;
+		}
+	
+		@font-face {
+			font-family: 'Publico Text Web';
+			src: url('https://pudding.cool/assets/fonts/publico/PublicoText-Bold-Web.woff2') format('woff2'),
+			url('https://pudding.cool/assets/fonts/publico/PublicoText-Bold-Web.woff') format('woff');
+			font-weight: 700;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: swap;
+		}
+		*/
+		
+		/*
+		********************
+			Atlas Grotesk
+		********************
+		*/
+	
+		/*
+		@font-face {
+			font-family: 'Atlas Grotesk Web';
+			src: url('https://pudding.cool/assets/fonts/atlas/AtlasGrotesk-Regular-Web.woff2') format('woff2'),
+			url('https://pudding.cool/assets/fonts/atlas/AtlasGrotesk-Regular-Web.woff') format('woff');
+			font-weight: 400;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: swap;
+		}
+	
+		@font-face {
+			font-family: 'Atlas Grotesk Web';
+			src: url('https://pudding.cool/assets/fonts/atlas/AtlasGrotesk-Medium-Web.woff2') format('woff2'),
+			url('https://pudding.cool/assets/fonts/atlas/AtlasGrotesk-Medium-Web.woff') format('woff');
+			font-weight: 500;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: swap;
+		}
+		
+		@font-face {
+			font-family: 'Atlas Grotesk Web';
+			src: url('https://pudding.cool/assets/fonts/atlas/AtlasGrotesk-Bold-Web.woff2') format('woff2'),
+			url('https://pudding.cool/assets/fonts/atlas/AtlasGrotesk-Bold-Web.woff') format('woff');
+			font-weight: 600;
+			font-style: normal;
+			font-stretch: normal;
+			font-display: swap;
+		}
+		*/
+	</style>
+	<script>
+	
+	</script>
+</head>
+
+<body>
+
+	<a href='#content' class='skip-to-main'>Skip to main content</a>
+	
+	<header class='is-sticky is-dark'>
+		<a href='https://pudding.cool' target='_blank' class='logo'>
+			<svg id="wordmark" x="0px" y="0px" style="enable-background:new 0 0 192.6 50;" xml:space="preserve" viewBox="0 0 192.6 50">
+<g>
+	<path class="st0" d="M150.1,9.5c1.5,0,2.8,1.3,2.8,2.8s-1.3,2.8-2.8,2.8s-2.8-1.3-2.8-2.8S148.6,9.5,150.1,9.5z"/>
+	<path class="st0" d="M147.2,17.3h5.6v18.2h-5.6V17.3z"/>
+	<path class="st0" d="M77.1,9.5h-1.9h-7v19.3v6.7h5.6v-6.7v-1.4h1.4h1.9c4.9,0,8.9-4,8.9-8.9S82.1,9.5,77.1,9.5z M77.1,21.8h-1.9
+		h-1.4v-1.4v-3.8v-1.4h1.4h1.9c1.8,0,3.3,1.5,3.3,3.3S79,21.8,77.1,21.8z"/>
+	<path class="st0" d="M105.7,17.6h-5.6v8.9c0,1.8-1.5,3.3-3.3,3.3s-3.3-1.5-3.3-3.3v-8.9h-5.6v8.9c0,4.9,4,8.9,8.9,8.9
+		s8.9-4,8.9-8.9V17.6z"/>
+	<path class="st0" d="M164.1,17.6c-4.9,0-8.9,4-8.9,8.9v8.9h5.6v-8.9c0-1.8,1.5-3.3,3.3-3.3s3.3,1.5,3.3,3.3v8.9h5.6v-8.9
+		C173,21.6,169,17.6,164.1,17.6z"/>
+	<path class="st0" d="M119.7,16.2v1.4h-1.4h-1.9c-4.9,0-8.9,4-8.9,8.9s4,8.9,8.9,8.9h1.9h7V16.2V9.5l-5.6,3.3
+		C119.7,12.8,119.7,16.2,119.7,16.2z M119.8,24.6v3.8v1.4h-1.4h-1.9c-1.8,0-3.3-1.5-3.3-3.3s1.5-3.3,3.3-3.3h1.9h1.4V24.6z"/>
+	<path class="st0" d="M139.3,16.2v1.4h-1.4H136c-4.9,0-8.9,4-8.9,8.9s4,8.9,8.9,8.9h1.9h7V16.2V9.5l-5.6,3.3V16.2z M139.4,24.6v3.8
+		v1.4h-1.5H136c-1.8,0-3.3-1.5-3.3-3.3s1.5-3.3,3.3-3.3h1.9h1.4v1.4H139.4z"/>
+	<path class="st0" d="M183.7,17.6c-4.9,0-8.9,4-8.9,8.9s4,8.9,8.9,8.9h1.9h1.4v1.4v0.9v1.4v1.4c0,1.8-1.5,3.3-3.3,3.3
+		s-3.3-1.5-3.3-3.3V38l-5.6,3.3c0.4,4.5,4.2,8.1,8.9,8.1c4.9,0,8.9-4,8.9-8.9v-1.4v-2.3V17.6h-7H183.7z M187,23.4v1.4v3.8V30h-1.4
+		h-1.9c-1.8,0-3.3-1.5-3.3-3.3s1.5-3.3,3.3-3.3h1.9C185.6,23.4,187,23.4,187,23.4z"/>
+	<path class="st0" d="M28.6,17.6c-1.2,0-2.3,0.2-3.3,0.6V9.5l-5.6,3.3v13.7v2v6.9h5.6v-6.9l0,0v-2c0-1.8,1.5-3.3,3.3-3.3
+		s3.3,1.5,3.3,3.3v8.9h5.6v-8.9C37.5,21.6,33.5,17.6,28.6,17.6z"/>
+	<path class="st0" d="M17.8,9.5H0v5.6h6.1v20.3h5.6V15.1h6.1V9.5z"/>
+	<path class="st0" d="M48.3,30.2c-0.4,0-1.2-0.1-1.8-0.4l5.2-2.1l5.6-2.3l-1-2.3l-0.1-0.2c-0.1-0.3-0.3-0.6-0.5-1
+		c-0.1-0.1-0.1-0.2-0.2-0.3c0,0,0-0.1-0.1-0.1l-0.1-0.1l-0.1-0.1c-1.6-2.2-4-3.5-6.7-3.7l0,0h-0.6c-4.9,0-8.9,4-8.9,8.9
+		c0,0.4,0,0.9,0.1,1.4l0,0V28c0,0,0,0,0,0.1c0,0,0,0,0,0.1c0,0.3,0.1,0.5,0.2,0.8v0.1v0.1c0.1,0.3,0.2,0.7,0.4,1v0.1v0.1
+		c0.1,0.3,0.3,0.5,0.4,0.8c0,0.1,0.1,0.1,0.1,0.2l0,0c0.1,0.2,0.3,0.4,0.4,0.6c0,0,0,0,0,0.1c0,0,0,0.1,0.1,0.1l0.1,0.1
+		c1.7,2.1,4.4,3.4,7.2,3.4h6.1v-5.2C54.5,30.2,50.6,30.2,48.3,30.2L48.3,30.2z M56.2,22.9L56.2,22.9L56.2,22.9z M44.6,25.7
+		L44.6,25.7l-0.2,0.1c0.2-1.9,1.8-3.5,3.7-3.5c0.9,0,1.8,0.4,2.4,0.9L46.2,25L44.6,25.7L44.6,25.7z"/>
+</g>
+</svg>
+		</a>
+		 
+		  <div class='header__menu tk-national'>
+		<p class='menu__tagline'><a href='https://pudding.cool' target='_blank'>The Pudding</a> explains ideas debated in culture with visual essays.</p>
+		<ul class='menu__links'>
+			<li><a href='https://pudding.cool/#new' target='_blank'>What’s New</a></li>
+			<li><a href='https://pudding.cool/#hits' target='_blank'>Greatest Hits</a></li>
+			<li><a href='https://pudding.cool/archives' target='_blank'>All Essays</a></li>
+			<li><a href='https://pudding.cool/about/' target='_blank'>About Us</a>
+		</ul>
+		<p class='menu__patreon'>We pour our ❤️ into these stories, but they take time and money. For just $2/month, you can help support us. Join our
+		growing community of data-driven enthusiasts.</p>
+		<a class='patreon-link' href='https://www.patreon.com/thepudding' target='_blank'>Help fund us</a>
+	
+	</div>
+	<button class='header__toggle'>
+		<span><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu" viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></span>
+		<span><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></span>
+	</button> 
+	</header>
+	
+
+	<main id='content'>
+
+		<section class='intro'>
+			<div class='intro--meta'>
+				<h1 class='intro__hed'>When to Scrap your Data Story</h1>
+				<p class='intro__dek'>A walk through The Pudding’s story graveyard</p>
+				<div class='intro__row'>
+					<p class='intro__byline'>By
+						<a href='https://pudding.cool/author/amber-thomas' target='_blank'>
+							<strong>Amber Thomas</strong>
+						</a>
+					</p>
+					<time class='intro__time'>August 2020</time>
+				</div>
+		
+			</div>
+		
+			<p class='prose'>Like many people, I'm <a href='https://amber.rbind.io/2019/06/02/failure/#'>not a fan of failure</a>. So, imagine my surprise when I found out that scrapping stories — that is, deciding part way through to not complete a project — is a very normal part of work at <a href='https://pudding.cool'>The Pudding</a>. In fact, my very first story here was scrapped and has never seen the light of day. And that's ok!</p>
+			<p class='prose'>I've been wanting to write about this for a while because I think it's important to normalize putting something down if it doesn't feel right any more. But knowing when to put something down and when to keep pushing forward with it is tricky. You don't want to give up on something great prematurely, but you also don't want to get stuck in the <a href='https://time.com/5347133/sunk-cost-fallacy-decisions/'>sunk cost fallacy</a>, pushing forward on something just because you've already put resources into it. So I decided to put our decision-making process into a flow chart.</p>
+		
+			<div class='flowchart'>
+				<svg width="901" height="1165" fill="none" viewBox="0 0 901 1165" class="flow__large">
+<g clip-path="url(#clip0)">
+<rect width="900" height="1164.71" transform="translate(0.909088)" fill="white"/>
+<rect x="0.909088" width="899.455" height="61.7273" fill="#9897F9"/>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="National 2" font-size="26.4545" letter-spacing="0em"><tspan x="252.227" y="92.16">Do you have a unique question?</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="National 2" font-size="38.2121" font-weight="bold" letter-spacing="0em"><tspan x="94.265" y="43.6351">WHEN TO SCRAP A DATA-DRIVEN STORY</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="National 2 Narrow" font-size="19.1061" letter-spacing="0em"><tspan x="266.924" y="133.32">yes</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="National 2 Narrow" font-size="19.1061" letter-spacing="0em"><tspan x="142.348" y="217.093">can it be answered </tspan><tspan x="173.022" y="235.093">with data?</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="National 2 Narrow" font-size="19.1061" letter-spacing="0em"><tspan x="38.5772" y="365.532">come up with a </tspan><tspan x="45.3129" y="383.532">new question</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="National 2 Narrow" font-size="19.1061" letter-spacing="0em"><tspan x="683.774" y="383.169">come up with a </tspan><tspan x="690.51" y="401.169">new question</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="National 2 Narrow" font-size="19.1061" letter-spacing="0em"><tspan x="244.827" y="367.002">do the data exist?</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="National 2 Narrow" font-size="19.1061" letter-spacing="0em"><tspan x="615.242" y="133.32">no</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="National 2 Narrow" font-size="19.1061" letter-spacing="0em"><tspan x="377.152" y="171.532">not unique, but it adds </tspan><tspan x="377.152" y="189.532">to the conversation</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="National 2 Narrow" font-size="19.1061" letter-spacing="0em"><tspan x="288.97" y="292.047">yes</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="National 2 Narrow" font-size="19.1061" letter-spacing="0em"><tspan x="114.076" y="293.517">no</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="National 2 Narrow" font-size="19.1061" letter-spacing="0em"><tspan x="372.742" y="425.79">yes</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="National 2 Narrow" font-size="19.1061" letter-spacing="0em"><tspan x="819.53" y="624.199">no</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="National 2 Narrow" font-size="19.1061" letter-spacing="0em"><tspan x="628.47" y="624.199">not sure</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="National 2 Narrow" font-size="19.1061" letter-spacing="0em"><tspan x="622.279" y="674.169">ask friends </tspan><tspan x="629.985" y="692.169">or family</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="National 2 Narrow" font-size="19.1061" letter-spacing="0em"><tspan x="724" y="624.199">yes</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="National 2 Narrow" font-size="19.1061" letter-spacing="0em"><tspan x="212.545" y="424.32">no</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="National 2 Narrow" font-size="19.1061" letter-spacing="0em"><tspan x="579.97" y="230.32">start there</tspan></text>
+<rect x="166.25" y="979.553" width="111.697" height="35.2727" fill="#9897F9" stroke="#9897F9" stroke-width="1.4697"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="National 2" font-size="20.5758" font-weight="bold" letter-spacing="0em"><tspan x="178.742" y="1003.63">SCRAP IT</tspan></text>
+<rect x="383.765" y="1023.64" width="132.273" height="35.2727" fill="#9897F9" stroke="#9897F9" stroke-width="1.4697"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="National 2" font-size="20.5758" font-weight="bold" letter-spacing="0em"><tspan x="396.258" y="1049.2">PUBLISH IT</tspan></text>
+<rect x="568.947" y="210.902" width="102.879" height="26.4545" stroke="#9897F9" stroke-width="1.4697"/>
+<path d="M623.541 202.603C623.828 202.89 624.293 202.89 624.58 202.603L629.257 197.926C629.544 197.639 629.544 197.174 629.257 196.887C628.97 196.6 628.504 196.6 628.218 196.887L624.061 201.044L619.904 196.887C619.617 196.6 619.151 196.6 618.864 196.887C618.577 197.174 618.577 197.639 618.864 197.926L623.541 202.603ZM623.326 154.318V202.083H624.795V154.318H623.326Z" fill="#9897F9"/>
+<path d="M639.675 83.4445C639.407 83.7492 639.437 84.2136 639.742 84.4816L644.709 88.8489C645.013 89.1169 645.478 89.0871 645.746 88.7823C646.014 88.4776 645.984 88.0132 645.679 87.7452L641.264 83.8631L645.146 79.4484C645.414 79.1437 645.385 78.6793 645.08 78.4113C644.775 78.1433 644.311 78.1732 644.043 78.4779L639.675 83.4445ZM684.36 222.573C694.893 216.964 702.359 205.062 706.429 190.602C710.505 176.124 711.212 158.964 708.123 142.66C705.035 126.357 698.142 110.852 686.959 99.7338C675.757 88.5977 660.292 81.9053 640.18 83.1964L640.274 84.6631C659.97 83.3987 675.023 89.9399 685.922 100.776C696.84 111.631 703.63 126.836 706.679 142.933C709.728 159.028 709.025 175.957 705.015 190.204C700.999 204.47 693.704 215.932 683.669 221.276L684.36 222.573Z" fill="#9897F9"/>
+<path d="M456.515 124.924H455.78V125.659H456.515V124.924ZM604.004 125.444C604.291 125.157 604.291 124.692 604.004 124.405L599.328 119.728C599.041 119.441 598.576 119.441 598.289 119.728C598.002 120.015 598.002 120.48 598.289 120.767L602.446 124.924L598.289 129.081C598.002 129.368 598.002 129.833 598.289 130.12C598.576 130.407 599.041 130.407 599.328 130.12L604.004 125.444ZM455.78 101.409V124.924H457.25V101.409H455.78ZM456.515 125.659H603.485V124.189H456.515V125.659Z" fill="#9897F9"/>
+<path d="M455.996 154.838C456.282 155.125 456.748 155.125 457.035 154.838L461.711 150.161C461.998 149.874 461.998 149.409 461.711 149.122C461.424 148.835 460.959 148.835 460.672 149.122L456.515 153.279L452.358 149.122C452.071 148.835 451.606 148.835 451.319 149.122C451.032 149.409 451.032 149.874 451.319 150.161L455.996 154.838ZM455.78 121.985V154.318H457.25V121.985H455.78Z" fill="#9897F9"/>
+<path d="M302.412 124.405C302.125 124.692 302.125 125.157 302.412 125.444L307.089 130.12C307.376 130.407 307.841 130.407 308.128 130.12C308.415 129.833 308.415 129.368 308.128 129.081L303.971 124.924L308.128 120.767C308.415 120.48 308.415 120.015 308.128 119.728C307.841 119.441 307.376 119.441 307.089 119.728L302.412 124.405ZM455.78 124.189H302.932V125.659H455.78V124.189Z" fill="#9897F9"/>
+<path d="M202.992 141.826V141.091H202.258V141.826H202.992ZM202.473 190.845C202.76 191.132 203.225 191.132 203.512 190.845L208.189 186.169C208.476 185.882 208.476 185.417 208.189 185.13C207.902 184.843 207.436 184.843 207.149 185.13L202.992 189.287L198.835 185.13C198.549 184.843 198.083 184.843 197.796 185.13C197.509 185.417 197.509 185.882 197.796 186.169L202.473 190.845ZM252.227 141.091H202.992V142.561H252.227V141.091ZM202.258 141.826V190.326H203.727V141.826H202.258Z" fill="#9897F9"/>
+<path d="M203.727 286.591H202.992V287.326H203.727V286.591ZM277.732 287.111C278.019 286.824 278.019 286.358 277.732 286.071L273.055 281.395C272.768 281.108 272.303 281.108 272.016 281.395C271.729 281.682 271.729 282.147 272.016 282.434L276.173 286.591L272.016 290.748C271.729 291.035 271.729 291.5 272.016 291.787C272.303 292.074 272.768 292.074 273.055 291.787L277.732 287.111ZM202.992 239.561V286.591H204.462V239.561H202.992ZM203.727 287.326H277.212V285.856H203.727V287.326Z" fill="#9897F9"/>
+<path d="M142.215 286.071C141.928 286.358 141.928 286.824 142.215 287.111L146.892 291.787C147.179 292.074 147.644 292.074 147.931 291.787C148.218 291.5 148.218 291.035 147.931 290.748L143.774 286.591L147.931 282.434C148.218 282.147 148.218 281.682 147.931 281.395C147.644 281.108 147.179 281.108 146.892 281.395L142.215 286.071ZM203.727 285.856H142.735V287.326H203.727V285.856Z" fill="#9897F9"/>
+<path d="M302.197 417.394H301.462V418.129H302.197V417.394ZM362.974 417.914C363.261 417.627 363.261 417.161 362.974 416.874L358.298 412.198C358.011 411.911 357.545 411.911 357.258 412.198C356.971 412.485 356.971 412.95 357.258 413.237L361.415 417.394L357.258 421.551C356.971 421.838 356.971 422.303 357.258 422.59C357.545 422.877 358.011 422.877 358.298 422.59L362.974 417.914ZM301.462 376.242V417.394H302.932V376.242H301.462ZM302.197 418.129H362.455V416.659H302.197V418.129Z" fill="#9897F9"/>
+<path d="M241.42 416.874C241.133 417.161 241.133 417.627 241.42 417.914L246.096 422.59C246.383 422.877 246.849 422.877 247.136 422.59C247.423 422.303 247.423 421.838 247.136 421.551L242.979 417.394L247.136 413.237C247.423 412.95 247.423 412.485 247.136 412.198C246.849 411.911 246.383 411.911 246.096 412.198L241.42 416.874ZM302.197 416.659H241.939V418.129H302.197V416.659Z" fill="#9897F9"/>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="National 2 Narrow" font-size="19.1061" letter-spacing="0em"><tspan x="616.232" y="735.896">are you the right person to </tspan><tspan x="660.807" y="753.896">tell this story?</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="National 2 Narrow" font-size="19.1061" letter-spacing="0em"><tspan x="751.924" y="809.381">yes</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="National 2 Narrow" font-size="19.1061" letter-spacing="0em"><tspan x="650.515" y="807.911">no</tspan></text>
+<path d="M710.773 800.985H710.038V801.72H710.773V800.985ZM742.156 801.504C742.443 801.217 742.443 800.752 742.156 800.465L737.479 795.789C737.192 795.502 736.727 795.502 736.44 795.789C736.153 796.076 736.153 796.541 736.44 796.828L740.597 800.985L736.44 805.142C736.153 805.429 736.153 805.894 736.44 806.181C736.727 806.468 737.192 806.468 737.479 806.181L742.156 801.504ZM710.038 759.833V800.985H711.508V759.833H710.038ZM710.773 801.72H741.636V800.25H710.773V801.72Z" fill="#9897F9"/>
+<path d="M679.389 800.465C679.102 800.752 679.102 801.217 679.389 801.504L684.066 806.181C684.353 806.468 684.818 806.468 685.105 806.181C685.392 805.894 685.392 805.429 685.105 805.142L680.948 800.985L685.105 796.828C685.392 796.541 685.392 796.076 685.105 795.789C684.818 795.502 684.353 795.502 684.066 795.789L679.389 800.465ZM710.773 800.25H679.909V801.72H710.773V800.25Z" fill="#9897F9"/>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="National 2 Narrow" font-size="19.1061" letter-spacing="0em"><tspan x="793.076" y="1023.96">yes</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="National 2 Narrow" font-size="19.1061" letter-spacing="0em"><tspan x="571.152" y="1041.59">yup!</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="National 2 Narrow" font-size="19.1061" letter-spacing="0em"><tspan x="525.591" y="1106.26">no</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="National 2 Narrow" font-size="19.1061" letter-spacing="0em"><tspan x="585.848" y="1122.43">fix it</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="National 2 Narrow" font-size="19.1061" letter-spacing="0em"><tspan x="696.076" y="1022.49">no</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="National 2 Narrow" font-size="19.1061" letter-spacing="0em"><tspan x="590.258" y="988.684">try again</tspan></text>
+<path d="M751.924 1014.09H751.189V1014.83H751.924V1014.09ZM783.308 1014.61C783.595 1014.32 783.595 1013.86 783.308 1013.57L778.631 1008.89C778.344 1008.61 777.879 1008.61 777.592 1008.89C777.305 1009.18 777.305 1009.65 777.592 1009.93L781.749 1014.09L777.592 1018.25C777.305 1018.53 777.305 1019 777.592 1019.29C777.879 1019.57 778.344 1019.57 778.631 1019.29L783.308 1014.61ZM751.189 981.758V1014.09H752.659V981.758H751.189ZM751.924 1014.83H782.788V1013.36H751.924V1014.83Z" fill="#9897F9"/>
+<path d="M720.541 1013.57C720.254 1013.86 720.254 1014.32 720.541 1014.61L725.218 1019.29C725.504 1019.57 725.97 1019.57 726.257 1019.29C726.544 1019 726.544 1018.53 726.257 1018.25L722.1 1014.09L726.257 1009.93C726.544 1009.65 726.544 1009.18 726.257 1008.89C725.97 1008.61 725.504 1008.61 725.218 1008.89L720.541 1013.57ZM751.924 1013.36H721.061V1014.83H751.924V1013.36Z" fill="#9897F9"/>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="National 2 Narrow" font-size="19.1061" letter-spacing="0em"><tspan x="571.152" y="859.351">collaborate with </tspan><tspan x="571.152" y="877.351">someone who is</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="National 2 Narrow" font-size="19.1061" letter-spacing="0em"><tspan x="692.682" y="918.138">create a plan for </tspan><tspan x="687.131" y="936.138">your data story. is </tspan><tspan x="685.648" y="954.138">it still interesting?</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="National 2 Narrow" font-size="19.1061" letter-spacing="0em"><tspan x="670.497" y="1069.52">nice, make the </tspan><tspan x="671.617" y="1087.52">thing! is it still </tspan><tspan x="680.302" y="1105.52">interesting?</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="National 2 Narrow" font-size="19.1061" letter-spacing="0em"><tspan x="149.61" y="487.517">can you collect the </tspan><tspan x="166.785" y="505.517">data yourself?</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="National 2 Narrow" font-size="19.1061" letter-spacing="0em"><tspan x="374.107" y="487.517">is it ethical to collect or </tspan><tspan x="403.643" y="505.517">use these data?</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="National 2 Narrow" font-size="19.1061" letter-spacing="0em"><tspan x="663.008" y="553.654">are the results of the </tspan><tspan x="664.108" y="571.654">analysis interesting? </tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="National 2 Narrow" font-size="19.1061" letter-spacing="0em"><tspan x="414.318" y="605.093">maybe not...</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="National 2 Narrow" font-size="19.1061" letter-spacing="0em"><tspan x="533.006" y="561.002">definitely</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="National 2 Narrow" font-size="19.1061" letter-spacing="0em"><tspan x="392.651" y="659.472">find a new </tspan><tspan x="387.091" y="677.472">data source</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="National 2 Narrow" font-size="19.1061" letter-spacing="0em"><tspan x="290.439" y="559.532">yes</tspan></text>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="National 2 Narrow" font-size="19.1061" letter-spacing="0em"><tspan x="130.242" y="558.063">no</tspan></text>
+<path d="M219.894 551.136H219.159V551.871H219.894V551.136ZM280.671 551.656C280.958 551.369 280.958 550.904 280.671 550.617L275.995 545.94C275.708 545.653 275.242 545.653 274.955 545.94C274.668 546.227 274.668 546.692 274.955 546.979L279.112 551.136L274.955 555.293C274.668 555.58 274.668 556.046 274.955 556.333C275.242 556.62 275.708 556.62 275.995 556.333L280.671 551.656ZM219.159 509.985V551.136H220.629V509.985H219.159ZM219.894 551.871H280.152V550.402H219.894V551.871Z" fill="#9897F9"/>
+<path d="M159.117 550.617C158.83 550.904 158.83 551.369 159.117 551.656L163.793 556.333C164.08 556.62 164.546 556.62 164.833 556.333C165.12 556.046 165.12 555.58 164.833 555.293L160.676 551.136L164.833 546.979C165.12 546.693 165.12 546.227 164.833 545.94C164.546 545.653 164.08 545.653 163.793 545.94L159.117 550.617ZM219.894 550.402H159.636V551.871H219.894V550.402Z" fill="#9897F9"/>
+<path d="M120.556 217.202C120.789 216.87 120.709 216.412 120.377 216.179L114.962 212.381C114.63 212.148 114.172 212.228 113.939 212.56C113.706 212.892 113.786 213.351 114.118 213.584L118.931 216.96L115.555 221.773C115.322 222.105 115.402 222.563 115.734 222.796C116.067 223.029 116.525 222.949 116.758 222.617L120.556 217.202ZM67.7447 342.213C60.0927 318.529 62.8165 289.131 72.6869 264.729C82.5687 240.299 99.507 221.114 120.082 217.504L119.828 216.057C98.5157 219.795 81.2836 239.557 71.3245 264.178C61.354 288.827 58.5664 318.585 66.3462 342.665L67.7447 342.213Z" fill="#9897F9"/>
+<path d="M120.17 340.754C120.457 341.041 120.922 341.041 121.209 340.754L125.886 336.078C126.173 335.791 126.173 335.326 125.886 335.039C125.599 334.752 125.133 334.752 124.846 335.039L120.689 339.196L116.532 335.039C116.245 334.752 115.78 334.752 115.493 335.039C115.206 335.326 115.206 335.791 115.493 336.078L120.17 340.754ZM119.955 299.818V340.235H121.424V299.818H119.955Z" fill="#9897F9"/>
+<path d="M301.677 345.898C301.964 346.185 302.43 346.185 302.717 345.898L307.393 341.222C307.68 340.935 307.68 340.47 307.393 340.183C307.106 339.896 306.641 339.896 306.354 340.183L302.197 344.34L298.04 340.183C297.753 339.896 297.288 339.896 297.001 340.183C296.714 340.47 296.714 340.935 297.001 341.222L301.677 345.898ZM301.462 300.553V345.379H302.932V300.553H301.462Z" fill="#9897F9"/>
+<path d="M219.374 465.679C219.661 465.966 220.127 465.966 220.414 465.679L225.09 461.002C225.377 460.715 225.377 460.25 225.09 459.963C224.803 459.676 224.338 459.676 224.051 459.963L219.894 464.12L215.737 459.963C215.45 459.676 214.985 459.676 214.698 459.963C214.411 460.25 214.411 460.715 214.698 461.002L219.374 465.679ZM219.159 432.091V465.159H220.629V432.091H219.159Z" fill="#9897F9"/>
+<path d="M78.803 549.667H78.0682V550.402H78.803V549.667ZM79.3227 394.094C79.0357 393.807 78.5704 393.807 78.2834 394.094L73.6069 398.771C73.3199 399.058 73.3199 399.523 73.6069 399.81C73.8939 400.097 74.3591 400.097 74.6461 399.81L78.803 395.653L82.96 399.81C83.2469 400.097 83.7122 400.097 83.9992 399.81C84.2862 399.523 84.2862 399.058 83.9992 398.771L79.3227 394.094ZM119.22 548.932H78.803V550.402H119.22V548.932ZM79.5379 549.667V394.614H78.0682V549.667H79.5379Z" fill="#9897F9"/>
+<path d="M136.121 996.455H135.386V997.189H136.121V996.455ZM154.277 996.974C154.564 996.687 154.564 996.222 154.277 995.935L149.601 991.258C149.314 990.971 148.848 990.971 148.561 991.258C148.274 991.545 148.274 992.011 148.561 992.298L152.718 996.455L148.561 1000.61C148.274 1000.9 148.274 1001.36 148.561 1001.65C148.848 1001.94 149.314 1001.94 149.601 1001.65L154.277 996.974ZM135.386 567.303V996.455H136.856V567.303H135.386ZM136.121 997.189H153.758V995.72H136.121V997.189Z" fill="#9897F9"/>
+<path d="M352.802 551.136V551.871H353.537V551.136H352.802ZM352.802 493.818V493.083H352.067V493.818H352.802ZM371.792 494.338C372.079 494.051 372.079 493.586 371.792 493.299L367.116 488.622C366.829 488.335 366.364 488.335 366.077 488.622C365.79 488.909 365.79 489.374 366.077 489.661L370.234 493.818L366.077 497.975C365.79 498.262 365.79 498.727 366.077 499.014C366.364 499.301 366.829 499.301 367.116 499.014L371.792 494.338ZM327.182 551.871H352.802V550.402H327.182V551.871ZM353.537 551.136V493.818H352.067V551.136H353.537ZM352.802 494.553H371.273V493.083H352.802V494.553Z" fill="#9897F9"/>
+<path d="M387.655 464.209C387.942 464.496 388.407 464.496 388.694 464.209L393.37 459.532C393.657 459.245 393.657 458.78 393.37 458.493C393.083 458.206 392.618 458.206 392.331 458.493L388.174 462.65L384.017 458.493C383.73 458.206 383.265 458.206 382.978 458.493C382.691 458.78 382.691 459.245 382.978 459.532L387.655 464.209ZM387.439 431.356V463.689H388.909V431.356H387.439Z" fill="#9897F9"/>
+<path d="M378.591 507.572C378.476 507.183 378.067 506.961 377.678 507.076L371.336 508.95C370.946 509.065 370.724 509.473 370.839 509.862C370.954 510.252 371.363 510.474 371.752 510.359L377.39 508.693L379.056 514.331C379.171 514.72 379.579 514.943 379.969 514.828C380.358 514.713 380.58 514.304 380.465 513.915L378.591 507.572ZM378.513 662.449C365.748 641.661 360.067 613.521 360.434 585.316C360.8 557.115 367.211 528.947 378.532 508.131L377.241 507.429C365.781 528.5 359.333 556.915 358.964 585.297C358.596 613.676 364.305 642.119 377.26 663.218L378.513 662.449Z" fill="#9897F9"/>
+<path d="M426.602 636.164C426.889 636.451 427.354 636.451 427.641 636.164L432.317 631.487C432.604 631.2 432.604 630.735 432.317 630.448C432.03 630.161 431.565 630.161 431.278 630.448L427.121 634.605L422.964 630.448C422.677 630.161 422.212 630.161 421.925 630.448C421.638 630.735 421.638 631.2 421.925 631.487L426.602 636.164ZM426.386 612.129V635.644H427.856V612.129H426.386Z" fill="#9897F9"/>
+<path d="M497.667 981.758V982.492H498.402V981.758H497.667ZM286.98 981.238C286.693 981.525 286.693 981.99 286.98 982.277L291.657 986.954C291.944 987.241 292.409 987.241 292.696 986.954C292.983 986.667 292.983 986.201 292.696 985.914L288.539 981.758L292.696 977.601C292.983 977.314 292.983 976.848 292.696 976.561C292.409 976.274 291.944 976.274 291.657 976.561L286.98 981.238ZM496.932 612.864V981.758H498.402V612.864H496.932ZM497.667 981.023H287.5V982.492H497.667V981.023Z" fill="#9897F9"/>
+<path d="M458.935 583.989C459.222 584.276 459.687 584.276 459.974 583.989L464.651 579.313C464.938 579.026 464.938 578.56 464.651 578.273C464.364 577.987 463.898 577.987 463.611 578.273L459.455 582.43L455.298 578.273C455.011 577.987 454.545 577.987 454.258 578.273C453.971 578.56 453.971 579.026 454.258 579.313L458.935 583.989ZM458.72 513.659V583.47H460.189V513.659H458.72Z" fill="#9897F9"/>
+<path d="M524.641 556.065C524.928 555.778 524.928 555.313 524.641 555.026L519.964 550.349C519.677 550.062 519.212 550.062 518.925 550.349C518.638 550.636 518.638 551.102 518.925 551.389L523.082 555.545L518.925 559.702C518.638 559.989 518.638 560.455 518.925 560.742C519.212 561.029 519.677 561.029 519.964 560.742L524.641 556.065ZM459.455 556.28H524.121V554.811H459.455V556.28Z" fill="#9897F9"/>
+<path d="M644.421 555.33C644.708 555.043 644.708 554.578 644.421 554.291L639.745 549.614C639.458 549.327 638.992 549.327 638.705 549.614C638.418 549.901 638.418 550.367 638.705 550.654L642.862 554.811L638.705 558.968C638.418 559.255 638.418 559.72 638.705 560.007C638.992 560.294 639.458 560.294 639.745 560.007L644.421 555.33ZM610.098 555.545H643.902V554.076H610.098V555.545Z" fill="#9897F9"/>
+<path d="M811.907 384.379C811.531 384.53 811.349 384.958 811.5 385.335L813.969 391.47C814.12 391.847 814.548 392.029 814.925 391.878C815.301 391.726 815.484 391.298 815.332 390.922L813.138 385.468L818.592 383.273C818.968 383.122 819.151 382.694 818.999 382.317C818.848 381.941 818.42 381.759 818.043 381.91L811.907 384.379ZM843.647 615.49C853.128 601.962 860.071 582.535 864.133 560.61C868.197 538.674 869.386 514.183 867.319 490.487C865.252 466.795 859.927 443.864 850.939 425.065C841.952 406.269 829.273 391.545 812.47 384.385L811.894 385.737C828.259 392.711 840.721 407.1 849.613 425.699C858.505 444.296 863.799 467.044 865.855 490.615C867.91 514.182 866.727 538.54 862.688 560.342C858.647 582.155 851.758 601.355 842.444 614.646L843.647 615.49Z" fill="#9897F9"/>
+<path d="M295.799 214.056C295.512 214.343 295.512 214.808 295.799 215.095L300.475 219.772C300.762 220.059 301.227 220.059 301.514 219.772C301.801 219.485 301.801 219.02 301.514 218.733L297.357 214.576L301.514 210.419C301.801 210.132 301.801 209.667 301.514 209.38C301.227 209.093 300.762 209.093 300.475 209.38L295.799 214.056ZM667.417 385.061C586.88 385.061 535.814 342.439 483.989 299.619C432.192 256.822 379.648 213.841 296.318 213.841L296.318 215.311C379.064 215.311 431.236 257.939 483.053 300.752C534.841 343.542 586.287 386.53 667.417 386.53V385.061Z" fill="#9897F9"/>
+<path d="M829.818 1131.67V1132.4H830.553V1131.67H829.818ZM190.5 1131.67H189.765V1132.4H190.5V1131.67ZM191.02 1024.69C190.733 1024.4 190.267 1024.4 189.98 1024.69L185.304 1029.36C185.017 1029.65 185.017 1030.11 185.304 1030.4C185.591 1030.69 186.056 1030.69 186.343 1030.4L190.5 1026.25L194.657 1030.4C194.944 1030.69 195.409 1030.69 195.696 1030.4C195.983 1030.11 195.983 1029.65 195.696 1029.36L191.02 1024.69ZM829.083 633.439V1131.67H830.553V633.439H829.083ZM829.818 1130.93H190.5V1132.4H829.818V1130.93ZM191.235 1131.67V1025.21H189.765V1131.67H191.235Z" fill="#9897F9"/>
+<path d="M731.348 589.381H730.614V590.116H731.348V589.381ZM828.348 589.381H829.083V588.646H828.348V589.381ZM827.829 606.035C828.116 606.322 828.581 606.322 828.868 606.035L833.545 601.358C833.832 601.071 833.832 600.606 833.545 600.319C833.258 600.032 832.792 600.032 832.505 600.319L828.348 604.476L824.192 600.319C823.905 600.032 823.439 600.032 823.152 600.319C822.865 600.606 822.865 601.071 823.152 601.358L827.829 606.035ZM730.614 577.591V589.381H732.083V577.591H730.614ZM731.348 590.116H828.348V588.646H731.348V590.116ZM827.614 589.381V605.515H829.083V589.381H827.614Z" fill="#9897F9"/>
+<path d="M663.742 589.349V588.614H663.008V589.349H663.742ZM663.223 606.035C663.51 606.322 663.975 606.322 664.262 606.035L668.939 601.358C669.226 601.071 669.226 600.606 668.939 600.319C668.652 600.032 668.186 600.032 667.899 600.319L663.742 604.476L659.585 600.319C659.298 600.032 658.833 600.032 658.546 600.319C658.259 600.606 658.259 601.071 658.546 601.358L663.223 606.035ZM732.818 588.614H663.742V590.083H732.818V588.614ZM663.008 589.349V605.515H664.477V589.349H663.008Z" fill="#9897F9"/>
+<path d="M730.829 604.565C731.116 604.852 731.581 604.852 731.868 604.565L736.545 599.889C736.832 599.602 736.832 599.136 736.545 598.849C736.258 598.562 735.792 598.562 735.505 598.849L731.348 603.006L727.192 598.849C726.905 598.562 726.439 598.562 726.152 598.849C725.865 599.136 725.865 599.602 726.152 599.889L730.829 604.565ZM730.614 589.349V604.045H732.083V589.349H730.614Z" fill="#9897F9"/>
+<path d="M662.488 656.004C662.775 656.291 663.24 656.291 663.527 656.004L668.204 651.328C668.491 651.041 668.491 650.576 668.204 650.289C667.917 650.002 667.452 650.002 667.165 650.289L663.008 654.446L658.851 650.289C658.564 650.002 658.098 650.002 657.811 650.289C657.524 650.576 657.524 651.041 657.811 651.328L662.488 656.004ZM662.273 631.97V655.485H663.742V631.97H662.273Z" fill="#9897F9"/>
+<path d="M644.421 567.823C644.708 567.536 644.708 567.07 644.421 566.783L639.745 562.107C639.458 561.82 638.992 561.82 638.705 562.107C638.418 562.394 638.418 562.859 638.705 563.146L642.862 567.303L638.705 571.46C638.418 571.747 638.418 572.212 638.705 572.499C638.992 572.786 639.458 572.786 639.745 572.499L644.421 567.823ZM614.206 681.346C595.469 667.654 592.1 639.399 598.958 614.344C602.378 601.848 608.323 590.248 616.071 581.784C623.818 573.323 633.325 568.038 643.901 568.038V566.568C632.8 566.568 622.925 572.122 614.987 580.792C607.052 589.46 601.009 601.282 597.54 613.956C590.62 639.237 593.864 668.301 613.339 682.533L614.206 681.346Z" fill="#9897F9"/>
+<path d="M732.299 709.648C732.586 709.935 733.051 709.935 733.338 709.648L738.014 704.972C738.301 704.685 738.301 704.22 738.014 703.933C737.727 703.646 737.262 703.646 736.975 703.933L732.818 708.09L728.661 703.933C728.374 703.646 727.909 703.646 727.622 703.933C727.335 704.22 727.335 704.685 727.622 704.972L732.299 709.648ZM732.083 630.5V709.129H733.553V630.5H732.083Z" fill="#9897F9"/>
+<path d="M655.874 841.921C656.161 842.208 656.627 842.208 656.914 841.921L661.59 837.245C661.877 836.958 661.877 836.492 661.59 836.205C661.303 835.918 660.838 835.918 660.551 836.205L656.394 840.362L652.237 836.205C651.95 835.918 651.485 835.918 651.198 836.205C650.911 836.492 650.911 836.958 651.198 837.245L655.874 841.921ZM655.659 812.742V841.402H657.129V812.742H655.659Z" fill="#9897F9"/>
+<path d="M537.348 823.765V823.03H536.614V823.765H537.348ZM537.348 999.394V1000.13H538.083V999.394H537.348ZM288.45 998.874C288.163 999.161 288.163 999.627 288.45 999.914L293.127 1004.59C293.414 1004.88 293.879 1004.88 294.166 1004.59C294.453 1004.3 294.453 1003.84 294.166 1003.55L290.009 999.394L294.166 995.237C294.453 994.95 294.453 994.485 294.166 994.198C293.879 993.911 293.414 993.911 293.127 994.198L288.45 998.874ZM657.129 823.03H537.348V824.5H657.129V823.03ZM536.614 823.765V999.394H538.083V823.765H536.614ZM537.348 998.659H288.97V1000.13H537.348V998.659Z" fill="#9897F9"/>
+<path d="M627 1014.09H626.265V1014.83H627V1014.09ZM627.52 998.874C627.233 998.587 626.767 998.587 626.48 998.874L621.804 1003.55C621.517 1003.84 621.517 1004.3 621.804 1004.59C622.091 1004.88 622.556 1004.88 622.843 1004.59L627 1000.43L631.157 1004.59C631.444 1004.88 631.909 1004.88 632.196 1004.59C632.483 1004.3 632.483 1003.84 632.196 1003.55L627.52 998.874ZM686.523 1013.36H627V1014.83H686.523V1013.36ZM627.735 1014.09V999.394H626.265V1014.09H627.735Z" fill="#9897F9"/>
+<path d="M625.53 940.606V939.871H624.795V940.606H625.53ZM676.02 941.126C676.307 940.839 676.307 940.373 676.02 940.086L671.343 935.41C671.056 935.123 670.591 935.123 670.304 935.41C670.017 935.697 670.017 936.162 670.304 936.449L674.461 940.606L670.304 944.763C670.017 945.05 670.017 945.515 670.304 945.802C670.591 946.089 671.056 946.089 671.343 945.802L676.02 941.126ZM626.265 970V940.606H624.795V970H626.265ZM625.53 941.341H675.5V939.871H625.53V941.341Z" fill="#9897F9"/>
+<path d="M288.45 1013.57C288.163 1013.86 288.163 1014.32 288.45 1014.61L293.127 1019.29C293.414 1019.57 293.879 1019.57 294.166 1019.29C294.453 1019 294.453 1018.53 294.166 1018.25L290.009 1014.09L294.166 1009.93C294.453 1009.65 294.453 1009.18 294.166 1008.89C293.879 1008.61 293.414 1008.61 293.127 1008.89L288.45 1013.57ZM626.265 1013.36H288.97V1014.83H626.265V1013.36Z" fill="#9897F9"/>
+<path d="M763.162 897.035C763.449 897.322 763.914 897.322 764.201 897.035L768.878 892.358C769.165 892.071 769.165 891.606 768.878 891.319C768.591 891.032 768.126 891.032 767.839 891.319L763.682 895.476L759.525 891.319C759.238 891.032 758.773 891.032 758.486 891.319C758.199 891.606 758.199 892.071 758.486 892.358L763.162 897.035ZM762.947 812.742V896.515H764.417V812.742H762.947Z" fill="#9897F9"/>
+<path d="M804.833 1090.52V1091.25H805.568V1090.52H804.833ZM782.268 1090C781.981 1090.28 781.981 1090.75 782.268 1091.03L786.945 1095.71C787.232 1096 787.697 1096 787.984 1095.71C788.271 1095.42 788.271 1094.96 787.984 1094.67L783.827 1090.52L787.984 1086.36C788.271 1086.07 788.271 1085.61 787.984 1085.32C787.697 1085.03 787.232 1085.03 786.945 1085.32L782.268 1090ZM804.098 1031.73V1090.52H805.568V1031.73H804.098ZM804.833 1089.78H782.788V1091.25H804.833V1089.78Z" fill="#9897F9"/>
+<path d="M585.848 1075.82H585.114V1076.55H585.848V1075.82ZM586.368 1047.37C586.081 1047.09 585.616 1047.09 585.329 1047.37L580.652 1052.05C580.365 1052.34 580.365 1052.8 580.652 1053.09C580.939 1053.38 581.405 1053.38 581.692 1053.09L585.848 1048.93L590.005 1053.09C590.292 1053.38 590.758 1053.38 591.045 1053.09C591.332 1052.8 591.332 1052.34 591.045 1052.05L586.368 1047.37ZM651.985 1075.08H585.848V1076.55H651.985V1075.08ZM586.583 1075.82V1047.89H585.114V1075.82H586.583Z" fill="#9897F9"/>
+<path d="M533.889 1035.62C533.602 1035.9 533.602 1036.37 533.889 1036.66L538.566 1041.33C538.853 1041.62 539.318 1041.62 539.605 1041.33C539.892 1041.05 539.892 1040.58 539.605 1040.29L535.448 1036.14L539.605 1031.98C539.892 1031.69 539.892 1031.23 539.605 1030.94C539.318 1030.65 538.853 1030.65 538.566 1030.94L533.889 1035.62ZM566.008 1035.4H534.409V1036.87H566.008V1035.4Z" fill="#9897F9"/>
+<path d="M534.409 1075.82V1075.08H533.674V1075.82H534.409ZM533.889 1085.89C534.176 1086.18 534.642 1086.18 534.929 1085.89L539.605 1081.21C539.892 1080.93 539.892 1080.46 539.605 1080.18C539.318 1079.89 538.853 1079.89 538.566 1080.18L534.409 1084.33L530.252 1080.18C529.965 1079.89 529.5 1079.89 529.213 1080.18C528.926 1080.46 528.926 1080.93 529.213 1081.21L533.889 1085.89ZM585.114 1075.08H534.409V1076.55H585.114V1075.08ZM533.674 1075.82V1085.37H535.144V1075.82H533.674Z" fill="#9897F9"/>
+<path d="M658.592 1097.76C658.537 1097.36 658.166 1097.08 657.764 1097.14L651.211 1098.03C650.809 1098.09 650.528 1098.46 650.583 1098.86C650.638 1099.26 651.009 1099.54 651.411 1099.49L657.235 1098.69L658.032 1104.52C658.087 1104.92 658.458 1105.2 658.86 1105.14C659.262 1105.09 659.544 1104.72 659.489 1104.32L658.592 1097.76ZM628.47 1114.77C635.554 1114.77 640.567 1113.99 645.075 1111.5C649.565 1109.01 653.471 1104.86 658.449 1098.31L657.278 1097.42C652.32 1103.95 648.568 1107.88 644.363 1110.21C640.177 1112.53 635.461 1113.3 628.47 1113.3V1114.77Z" fill="#9897F9"/>
+<path d="M534.409 1119.91H533.674V1120.64H534.409V1119.91ZM577.55 1120.43C577.837 1120.14 577.837 1119.68 577.55 1119.39L572.873 1114.71C572.586 1114.43 572.121 1114.43 571.834 1114.71C571.547 1115 571.547 1115.47 571.834 1115.75L575.991 1119.91L571.834 1124.07C571.547 1124.35 571.547 1124.82 571.834 1125.11C572.121 1125.39 572.586 1125.39 572.873 1125.11L577.55 1120.43ZM533.674 1109.62V1119.91H535.144V1109.62H533.674ZM534.409 1120.64H577.03V1119.17H534.409V1120.64Z" fill="#9897F9"/>
+<path d="M212.545 1119.91H211.811V1120.64H212.545V1119.91ZM213.065 1025.33C212.778 1025.04 212.313 1025.04 212.026 1025.33L207.349 1030.01C207.062 1030.29 207.062 1030.76 207.349 1031.04C207.636 1031.33 208.102 1031.33 208.389 1031.04L212.545 1026.89L216.702 1031.04C216.989 1031.33 217.455 1031.33 217.742 1031.04C218.029 1030.76 218.029 1030.29 217.742 1030.01L213.065 1025.33ZM534.409 1119.17H212.545V1120.64H534.409V1119.17ZM213.28 1119.91V1025.85H211.811V1119.91H213.28Z" fill="#9897F9"/>
+<path d="M652.72 920.765H651.985V921.5H652.72V920.765ZM677.489 921.285C677.776 920.998 677.776 920.533 677.489 920.246L672.813 915.569C672.526 915.282 672.061 915.282 671.774 915.569C671.487 915.856 671.487 916.321 671.774 916.608L675.93 920.765L671.774 924.922C671.487 925.209 671.487 925.674 671.774 925.961C672.061 926.248 672.526 926.248 672.813 925.961L677.489 921.285ZM651.985 886.227V920.765H653.455V886.227H651.985ZM652.72 921.5H676.97V920.03H652.72V921.5Z" fill="#9897F9"/>
+<path d="M228.712 169.015V168.28H227.977V169.015H228.712ZM228.192 190.111C228.479 190.397 228.945 190.397 229.232 190.111L233.908 185.434C234.195 185.147 234.195 184.682 233.908 184.395C233.621 184.108 233.156 184.108 232.869 184.395L228.712 188.552L224.555 184.395C224.268 184.108 223.803 184.108 223.516 184.395C223.229 184.682 223.229 185.147 223.516 185.434L228.192 190.111ZM368.333 168.28H228.712V169.75H368.333V168.28ZM227.977 169.015V189.591H229.447V169.015H227.977Z" fill="#9897F9"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="900" height="1164.71" fill="white" transform="translate(0.909088)"/>
+</clipPath>
+</defs>
+</svg>
+			</div>
+		
+		
+			<p class='prose'>You may notice that there are a lot more paths that lead to "SCRAP IT" than there are that lead to "PUBLISH IT". That doesn't mean that we actually scrap more stories than we publish, just that there are several places where we stop and reflect on the story in its current stage and make a conscious decision whether we want to move forward with it, switch directions, or say goodbye.</p>
+			<p class='prose'>Let's go through some examples of where our team has reached these junctures.</p>
+		
+		
+			<div class='minimap'>
+				<svg width="200" height="355" fill="none" viewBox="0 0 200 355">
+<g id="minimap">
+<rect width="200" height="354.717" fill="white"/>
+<g id="sections">
+<circle id="question" cx="103.298" cy="17.61" r="7.86164" fill="#9897F9"/>
+<circle id="data" cx="43.8644" cy="69.1824" r="7.86164" fill="#9897F9"/>
+<circle id="exist" cx="66.1915" cy="115.094" r="7.86164" fill="#9897F9"/>
+<circle id="ethical" cx="86.9462" cy="156.604" r="7.86164" fill="#9897F9"/>
+<circle id="results" cx="137.261" cy="173.27" r="7.86164" fill="#9897F9"/>
+<circle id="plan" cx="158.015" cy="265.723" r="7.86164" fill="#9897F9"/>
+<circle id="make" cx="178.456" cy="311.321" r="7.86164" fill="#9897F9"/>
+<circle id="right" cx="137.261" cy="228.302" r="7.86164" fill="#9897F9"/>
+</g>
+<g id="circles">
+<circle id="Ellipse 2" cx="136.003" cy="36.7925" r="4.71698" fill="#E5E5E5"/>
+<circle id="Ellipse 36" cx="137.261" cy="69.8113" r="4.71698" fill="#E5E5E5"/>
+<circle id="Ellipse 3" cx="66.5059" cy="87.7358" r="4.71698" fill="#E5E5E5"/>
+<circle id="Ellipse 9" cx="86.6317" cy="128.931" r="4.71698" fill="#E5E5E5"/>
+<circle id="Ellipse 15" cx="86.9462" cy="188.994" r="4.71698" fill="#E5E5E5"/>
+<circle id="Ellipse 19" cx="118.707" cy="196.855" r="4.71698" fill="#E5E5E5"/>
+<circle id="Ellipse 22" cx="118.707" cy="217.296" r="4.71698" fill="#E5E5E5"/>
+<circle id="Ellipse 20" cx="137.575" cy="196.855" r="4.71698" fill="#E5E5E5"/>
+<circle id="Ellipse 21" cx="157.386" cy="196.855" r="4.71698" fill="#E5E5E5"/>
+<circle id="Ellipse 23" cx="146.695" cy="121.069" r="4.71698" fill="#E5E5E5"/>
+<circle id="Ellipse 17" cx="108.644" cy="173.585" r="4.71698" fill="#E5E5E5"/>
+<circle id="Ellipse 16" cx="86.9462" cy="209.748" r="4.71698" fill="#E5E5E5"/>
+<circle id="Ellipse 6" cx="22.1663" cy="87.7358" r="4.71698" fill="#E5E5E5"/>
+<circle id="Ellipse 10" cx="46.3801" cy="128.931" r="4.71698" fill="#E5E5E5"/>
+<circle id="Ellipse 25" cx="158.015" cy="243.396" r="4.71698" fill="#E5E5E5"/>
+<circle id="Ellipse 26" cx="117.764" cy="243.396" r="4.71698" fill="#E5E5E5"/>
+<circle id="Ellipse 29" cx="178.141" cy="280.818" r="4.71698" fill="#E5E5E5"/>
+<circle id="Ellipse 30" cx="137.89" cy="280.818" r="4.71698" fill="#E5E5E5"/>
+<circle id="Ellipse 33" cx="147.952" cy="301.572" r="4.71698" fill="#E5E5E5"/>
+<circle id="Ellipse 35" cx="151.726" cy="334.906" r="4.71698" fill="#E5E5E5"/>
+<circle id="Ellipse 34" cx="131.915" cy="324.843" r="4.71698" fill="#E5E5E5"/>
+<circle id="Ellipse 31" cx="117.764" cy="281.132" r="4.71698" fill="#E5E5E5"/>
+<circle id="Ellipse 27" cx="117.764" cy="265.723" r="4.71698" fill="#E5E5E5"/>
+<circle id="Ellipse 12" cx="66.5059" cy="160.063" r="4.71698" fill="#E5E5E5"/>
+<circle id="Ellipse 13" cx="22.1663" cy="160.063" r="4.71698" fill="#E5E5E5"/>
+<circle id="Ellipse 11" cx="46.3801" cy="148.742" r="4.71698" fill="#E5E5E5"/>
+<circle id="Ellipse 7" cx="22.1663" cy="111.635" r="4.71698" fill="#E5E5E5"/>
+<circle id="Ellipse 4" cx="68.7072" cy="36.7925" r="4.71698" fill="#E5E5E5"/>
+</g>
+<path id="Star 1" d="M121.584 295.843C121.866 294.974 123.096 294.974 123.378 295.843L124.034 297.862C124.16 298.251 124.523 298.514 124.931 298.514H127.054C127.968 298.514 128.348 299.683 127.609 300.221L125.891 301.468C125.561 301.709 125.422 302.135 125.548 302.523L126.205 304.542C126.487 305.411 125.492 306.134 124.753 305.597L123.035 304.349C122.705 304.109 122.257 304.109 121.926 304.349L120.209 305.597C119.469 306.134 118.475 305.411 118.757 304.542L119.413 302.523C119.539 302.135 119.401 301.709 119.07 301.468L117.353 300.221C116.614 299.683 116.994 298.514 117.907 298.514H120.03C120.439 298.514 120.801 298.251 120.928 297.862L121.584 295.843Z" fill="#C8C8C8"/>
+<g id="bin 1" clip-path="url(#clip0)">
+<path id="Vector" d="M16.2701 291.077V300.904C16.2701 301.445 16.7123 301.887 17.2528 301.887H26.0971C26.6376 301.887 27.0798 301.445 27.0798 300.904V291.077H16.2701ZM19.2182 299.921H18.2355V293.042H19.2182V299.921ZM21.1836 299.921H20.2009V293.042H21.1836V299.921ZM23.149 299.921H22.1663V293.042H23.149V299.921ZM25.1144 299.921H24.1317V293.042H25.1144V299.921Z" fill="#C8C8C8"/>
+<path id="Vector_2" d="M27.3255 288.129H24.1317V286.901C24.1317 286.495 23.8 286.164 23.3947 286.164H19.9552C19.5498 286.164 19.2182 286.495 19.2182 286.901V288.129H16.0244C15.619 288.129 15.2874 288.461 15.2874 288.866V290.094H28.0625V288.866C28.0625 288.461 27.7308 288.129 27.3255 288.129ZM23.149 288.129H20.2009V287.159H23.149V288.129Z" fill="#C8C8C8"/>
+</g>
+<g id="arrows">
+<path id="Vector 1" d="M137.086 61.8838C137.209 62.0066 137.408 62.0066 137.531 61.8838L139.532 59.8825C139.655 59.7597 139.655 59.5606 139.532 59.4378C139.409 59.315 139.21 59.315 139.087 59.4378L137.308 61.2167L135.529 59.4378C135.407 59.315 135.207 59.315 135.085 59.4378C134.962 59.5606 134.962 59.7597 135.085 59.8825L137.086 61.8838ZM136.994 46.6409V61.6614H137.623V46.6409H136.994Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 2" d="M114.397 14.872C114.274 14.9948 114.274 15.1939 114.397 15.3167L116.398 17.318C116.521 17.4408 116.72 17.4408 116.843 17.318C116.966 17.1952 116.966 16.9961 116.843 16.8732L115.064 15.0944L116.843 13.3155C116.966 13.1927 116.966 12.9936 116.843 12.8708C116.72 12.7479 116.521 12.7479 116.398 12.8708L114.397 14.872ZM146.567 69.1211C149.456 66.9925 152.067 62.5192 153.58 57.0582C155.097 51.5853 155.527 45.0672 154.004 38.8032C152.481 32.5343 149 26.5195 142.702 22.0757C136.407 17.6339 127.322 14.7799 114.619 14.7799V15.4088C127.23 15.4088 136.178 18.2419 142.34 22.5895C148.499 26.9351 151.901 32.8118 153.393 38.9517C154.887 45.0965 154.467 51.5046 152.974 56.8902C151.479 62.2876 148.922 66.6052 146.194 68.6148L146.567 69.1211Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 3" d="M103.489 37.3976H103.174V37.712H103.489V37.3976ZM127.916 37.6199C128.038 37.4971 128.038 37.298 127.916 37.1752L125.914 35.174C125.792 35.0512 125.592 35.0512 125.47 35.174C125.347 35.2968 125.347 35.4959 125.47 35.6187L127.249 37.3976L125.47 39.1765C125.347 39.2993 125.347 39.4984 125.47 39.6212C125.592 39.744 125.792 39.744 125.914 39.6212L127.916 37.6199ZM103.174 30.0029V37.3976H103.803V30.0029H103.174ZM103.489 37.712H127.693V37.0831H103.489V37.712Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 53" d="M103.267 46.8633C103.389 46.9861 103.589 46.9861 103.711 46.8633L105.713 44.862C105.835 44.7392 105.835 44.5401 105.713 44.4173C105.59 44.2945 105.391 44.2945 105.268 44.4173L103.489 46.1962L101.71 44.4173C101.587 44.2945 101.388 44.2945 101.265 44.4173C101.143 44.5401 101.143 44.7392 101.265 44.862L103.267 46.8633ZM103.174 36.4732V46.6409H103.803V36.4732H103.174Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 4" d="M76.9825 37.1752C76.8597 37.298 76.8597 37.4971 76.9825 37.6199L78.9838 39.6212C79.1066 39.744 79.3057 39.744 79.4285 39.6212C79.5513 39.4984 79.5513 39.2993 79.4285 39.1765L77.6496 37.3976L79.4285 35.6187C79.5513 35.4959 79.5513 35.2968 79.4285 35.174C79.3057 35.0512 79.1066 35.0512 78.9838 35.174L76.9825 37.1752ZM103.258 37.0831H77.2049V37.712H103.258V37.0831Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 5" d="M43.8644 37.7358V37.4214H43.5499V37.7358H43.8644ZM43.642 59.3418C43.7649 59.4647 43.964 59.4647 44.0868 59.3418L46.088 57.3406C46.2108 57.2178 46.2108 57.0187 46.088 56.8959C45.9652 56.7731 45.7661 56.7731 45.6433 56.8959L43.8644 58.6748L42.0855 56.8959C41.9627 56.7731 41.7636 56.7731 41.6408 56.8959C41.518 57.0187 41.518 57.2178 41.6408 57.3406L43.642 59.3418ZM59.2732 37.4214H43.8644V38.0503H59.2732V37.4214ZM43.5499 37.7358V59.1195H44.1789V37.7358H43.5499Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 6" d="M43.55 87.7358H43.2355V88.0503H43.55V87.7358ZM59.1811 87.9582C59.3039 87.8354 59.3039 87.6363 59.1811 87.5135L57.1799 85.5122C57.0571 85.3894 56.858 85.3894 56.7352 85.5122C56.6123 85.635 56.6123 85.8341 56.7352 85.9569L58.514 87.7358L56.7352 89.5147C56.6123 89.6375 56.6123 89.8366 56.7352 89.9594C56.858 90.0822 57.0571 90.0822 57.1799 89.9594L59.1811 87.9582ZM43.2355 78.6163V87.7358H43.8644V78.6163H43.2355ZM43.55 88.0503H58.9588V87.4214H43.55V88.0503Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 7" d="M29.1767 87.5135C29.0539 87.6363 29.0539 87.8354 29.1767 87.9582L31.1779 89.9594C31.3007 90.0823 31.4998 90.0823 31.6226 89.9594C31.7454 89.8366 31.7454 89.6375 31.6226 89.5147L29.8437 87.7358L31.6226 85.957C31.7454 85.8341 31.7454 85.635 31.6226 85.5122C31.4998 85.3894 31.3007 85.3894 31.1779 85.5122L29.1767 87.5135ZM43.55 87.4214H29.399V88.0503H43.55V87.4214Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 11" d="M66.1915 129.245H65.877V129.56H66.1915V129.245ZM79.3069 129.468C79.4297 129.345 79.4297 129.146 79.3069 129.023L77.3057 127.022C77.1829 126.899 76.9837 126.899 76.8609 127.022C76.7381 127.145 76.7381 127.344 76.8609 127.466L78.6398 129.245L76.8609 131.024C76.7381 131.147 76.7381 131.346 76.8609 131.469C76.9837 131.592 77.1829 131.592 77.3057 131.469L79.3069 129.468ZM65.877 124.214V129.245H66.5059V124.214H65.877ZM66.1915 129.56H79.0845V128.931H66.1915V129.56Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 12" d="M53.3905 129.023C53.2677 129.146 53.2677 129.345 53.3905 129.468L55.3917 131.469C55.5145 131.592 55.7137 131.592 55.8365 131.469C55.9593 131.346 55.9593 131.147 55.8365 131.024L54.0576 129.245L55.8365 127.466C55.9593 127.344 55.9593 127.145 55.8365 127.022C55.7137 126.899 55.5145 126.899 55.3917 127.022L53.3905 129.023ZM66.2725 128.931H53.6129V129.56H66.2725V128.931Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 8" d="M33.4211 68.4316C33.5275 68.2944 33.5025 68.0968 33.3652 67.9905L31.1282 66.2568C30.9909 66.1504 30.7934 66.1754 30.687 66.3127C30.5806 66.45 30.6057 66.6475 30.7429 66.7539L32.7314 68.2949L31.1903 70.2834C31.0839 70.4207 31.109 70.6182 31.2463 70.7246C31.3835 70.831 31.5811 70.8059 31.6875 70.6687L33.4211 68.4316ZM15.5116 110.52C11.1667 103.848 10.07 94.0426 12.8348 85.5534C15.5942 77.0809 22.1879 69.9484 33.2121 68.551L33.133 67.927C21.8302 69.3598 15.0592 76.6927 12.2368 85.3586C9.41987 94.0078 10.5244 104.014 14.9846 110.863L15.5116 110.52Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 9" d="M21.8749 104.384C21.9977 104.507 22.1968 104.507 22.3196 104.384L24.3208 102.383C24.4436 102.26 24.4436 102.061 24.3208 101.938C24.198 101.816 23.9989 101.816 23.8761 101.938L22.0972 103.717L20.3183 101.938C20.1955 101.816 19.9964 101.816 19.8736 101.938C19.7508 102.061 19.7508 102.26 19.8736 102.383L21.8749 104.384ZM21.7828 94.5969V104.162H22.4117V94.5969H21.7828Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 10" d="M66.2836 105.513C66.4064 105.636 66.6055 105.636 66.7283 105.513L68.7295 103.512C68.8523 103.389 68.8523 103.19 68.7295 103.067C68.6067 102.945 68.4076 102.945 68.2848 103.067L66.5059 104.846L64.727 103.067C64.6042 102.945 64.4051 102.945 64.2823 103.067C64.1595 103.19 64.1595 103.389 64.2823 103.512L66.2836 105.513ZM66.1915 94.3396V105.291H66.8204V94.3396H66.1915Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 16" d="M22.3887 117.388C22.2658 117.265 22.0667 117.265 21.9439 117.388L19.9427 119.389C19.8199 119.512 19.8199 119.711 19.9427 119.834C20.0655 119.956 20.2646 119.956 20.3874 119.834L22.1663 118.055L23.9452 119.834C24.068 119.956 24.2671 119.956 24.3899 119.834C24.5127 119.711 24.5127 119.512 24.3899 119.389L22.3887 117.388ZM22.4808 154.088V117.61H21.8518V154.088H22.4808Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 68" d="M21.9439 282.927C22.0667 283.05 22.2658 283.05 22.3887 282.927L24.3899 280.925C24.5127 280.803 24.5127 280.604 24.3899 280.481C24.2671 280.358 24.068 280.358 23.9452 280.481L22.1663 282.26L20.3874 280.481C20.2646 280.358 20.0655 280.358 19.9427 280.481C19.8199 280.604 19.8199 280.803 19.9427 280.925L21.9439 282.927ZM21.8518 167.61V282.704H22.4808V167.61H21.8518Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 19" d="M86.4094 146.868C86.5322 146.991 86.7313 146.991 86.8541 146.868L88.8553 144.867C88.9781 144.744 88.9781 144.545 88.8553 144.422C88.7325 144.299 88.5334 144.299 88.4106 144.422L86.6317 146.201L84.8528 144.422C84.73 144.299 84.5309 144.299 84.4081 144.422C84.2853 144.545 84.2853 144.744 84.4081 144.867L86.4094 146.868ZM86.3172 135.849V146.646H86.9462V135.849H86.3172Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 55" d="M46.1578 142.466C46.2806 142.588 46.4797 142.588 46.6025 142.466L48.6037 140.464C48.7265 140.341 48.7265 140.142 48.6037 140.02C48.4809 139.897 48.2818 139.897 48.159 140.02L46.3801 141.798L44.6012 140.02C44.4784 139.897 44.2793 139.897 44.1565 140.02C44.0337 140.142 44.0337 140.341 44.1565 140.464L46.1578 142.466ZM46.0657 135.22V142.243H46.6946V135.22H46.0657Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 20" d="M80.3325 163.758C80.2893 163.59 80.1179 163.489 79.9497 163.532L77.2085 164.236C77.0402 164.279 76.9389 164.45 76.9821 164.619C77.0253 164.787 77.1967 164.888 77.3649 164.845L79.8016 164.219L80.4273 166.656C80.4705 166.824 80.6419 166.926 80.8101 166.882C80.9783 166.839 81.0796 166.668 81.0364 166.5L80.3325 163.758ZM80.2895 208.001C76.3367 202.081 74.5735 194.059 74.6872 186.011C74.8008 177.963 76.7904 169.929 80.2986 163.997L79.7573 163.676C76.1822 169.722 74.1732 177.869 74.0583 186.002C73.9435 194.134 75.7219 202.293 79.7664 208.351L80.2895 208.001Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 21" d="M86.7238 202.9C86.8466 203.023 87.0457 203.023 87.1685 202.9L89.1698 200.899C89.2926 200.776 89.2926 200.577 89.1698 200.454C89.047 200.331 88.8479 200.331 88.7251 200.454L86.9462 202.233L85.1673 200.454C85.0445 200.331 84.8454 200.331 84.7226 200.454C84.5998 200.577 84.5998 200.776 84.7226 200.899L86.7238 202.9ZM86.6317 195.283V202.678H87.2606V195.283H86.6317Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 23" d="M86.7238 182.553C86.8466 182.676 87.0457 182.676 87.1685 182.553L89.1698 180.552C89.2926 180.429 89.2926 180.23 89.1698 180.107C89.047 179.984 88.8479 179.984 88.7251 180.107L86.9462 181.886L85.1673 180.107C85.0445 179.984 84.8454 179.984 84.7226 180.107C84.5998 180.23 84.5998 180.429 84.7226 180.552L86.7238 182.553ZM86.6317 166.667V182.33H87.2606V166.667H86.6317Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 24" d="M101.215 173.772C101.337 173.649 101.337 173.45 101.215 173.327L99.2134 171.326C99.0906 171.203 98.8915 171.203 98.7687 171.326C98.6459 171.448 98.6459 171.648 98.7687 171.77L100.548 173.549L98.7687 175.328C98.6459 175.451 98.6459 175.65 98.7687 175.773C98.8915 175.896 99.0906 175.896 99.2134 175.773L101.215 173.772ZM86.9462 173.864H100.992V173.235H86.9462V173.864Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 25" d="M126.16 173.748C126.283 173.625 126.283 173.426 126.16 173.303L124.159 171.302C124.036 171.179 123.837 171.179 123.714 171.302C123.591 171.425 123.591 171.624 123.714 171.746L125.493 173.525L123.714 175.304C123.591 175.427 123.591 175.626 123.714 175.749C123.837 175.872 124.036 175.872 124.159 175.749L126.16 173.748ZM115.308 173.84H125.938V173.211H115.308V173.84Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 26" d="M153.181 121.406C153.02 121.471 152.942 121.654 153.007 121.816L154.063 124.441C154.128 124.602 154.311 124.68 154.472 124.615C154.633 124.551 154.711 124.367 154.647 124.206L153.707 121.872L156.041 120.933C156.202 120.869 156.281 120.685 156.216 120.524C156.151 120.363 155.968 120.285 155.807 120.35L153.181 121.406ZM163.261 194.208C166.252 189.94 168.439 183.819 169.717 176.917C170.996 170.012 171.371 162.303 170.72 154.844C170.07 147.386 168.393 140.165 165.562 134.242C162.73 128.32 158.73 123.671 153.422 121.409L153.175 121.987C158.297 124.17 162.203 128.676 164.994 134.514C167.785 140.35 169.448 147.493 170.094 154.898C170.739 162.302 170.367 169.955 169.099 176.803C167.829 183.656 165.666 189.681 162.746 193.847L163.261 194.208Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 27" d="M53.3905 65.5009C53.2677 65.6237 53.2677 65.8228 53.3905 65.9456L55.3917 67.9469C55.5145 68.0697 55.7137 68.0697 55.8365 67.9469C55.9593 67.8241 55.9593 67.625 55.8365 67.5022L54.0576 65.7233L55.8365 63.9444C55.9593 63.8216 55.9593 63.6225 55.8365 63.4997C55.7137 63.3769 55.5145 63.3769 55.3917 63.4997L53.3905 65.5009ZM137.261 119.182C119.208 119.182 107.748 105.874 96.0468 92.4038C84.3887 78.9828 72.4959 65.4088 53.6129 65.4088L53.6129 66.0377C72.1643 66.0377 83.875 79.3505 95.572 92.8163C107.226 106.233 118.872 119.811 137.261 119.811V119.182Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 29" d="M137.575 185.479H137.261V185.793H137.575V185.479ZM156.757 185.479H157.072V185.164H156.757V185.479ZM156.535 190.788C156.658 190.911 156.857 190.911 156.98 190.788L158.981 188.787C159.104 188.664 159.104 188.465 158.981 188.342C158.858 188.22 158.659 188.22 158.536 188.342L156.757 190.121L154.979 188.342C154.856 188.22 154.657 188.22 154.534 188.342C154.411 188.465 154.411 188.664 154.534 188.787L156.535 190.788ZM137.261 181.761V185.479H137.89V181.761H137.261ZM137.575 185.793H156.757V185.164H137.575V185.793ZM156.443 185.479V190.566H157.072V185.479H156.443Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 30" d="M118.707 185.535V185.22H118.393V185.535H118.707ZM118.485 190.788C118.608 190.911 118.807 190.911 118.93 190.788L120.931 188.787C121.054 188.664 121.054 188.465 120.931 188.342C120.808 188.22 120.609 188.22 120.486 188.342L118.707 190.121L116.928 188.342C116.805 188.22 116.606 188.22 116.484 188.342C116.361 188.465 116.361 188.664 116.484 188.787L118.485 190.788ZM137.89 185.22H118.707V185.849H137.89V185.22ZM118.393 185.535V190.566H119.022V185.535H118.393Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 31" d="M137.229 190.302C137.352 190.425 137.551 190.425 137.674 190.302L139.675 188.301C139.798 188.178 139.798 187.979 139.675 187.856C139.552 187.734 139.353 187.734 139.23 187.856L137.451 189.635L135.672 187.856C135.55 187.734 135.35 187.734 135.228 187.856C135.105 187.979 135.105 188.178 135.228 188.301L137.229 190.302ZM137.137 185.458V190.08H137.766V185.458H137.137Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 32" d="M118.485 211.076C118.608 211.199 118.807 211.199 118.93 211.076L120.931 209.075C121.054 208.952 121.054 208.753 120.931 208.63C120.808 208.507 120.609 208.507 120.486 208.63L118.707 210.409L116.928 208.63C116.805 208.507 116.606 208.507 116.484 208.63C116.361 208.753 116.361 208.952 116.484 209.075L118.485 211.076ZM118.393 203.459V210.854H119.022V203.459H118.393Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 33" d="M126.477 178.524C126.6 178.401 126.6 178.202 126.477 178.08L124.475 176.078C124.353 175.955 124.154 175.955 124.031 176.078C123.908 176.201 123.908 176.4 124.031 176.523L125.81 178.302L124.031 180.081C123.908 180.204 123.908 180.403 124.031 180.525C124.154 180.648 124.353 180.648 124.475 180.525L126.477 178.524ZM112.548 214.412C106.669 210.115 104.259 201.17 106.263 193.268C107.262 189.327 109.356 185.667 112.643 182.993C115.927 180.32 120.422 178.616 126.254 178.616V177.987C120.294 177.987 115.654 179.731 112.246 182.505C108.839 185.277 106.681 189.061 105.653 193.113C103.603 201.198 106.04 210.435 112.177 214.919L112.548 214.412Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 36" d="M137.353 217.716C137.476 217.838 137.675 217.838 137.797 217.716L139.799 215.714C139.922 215.592 139.922 215.393 139.799 215.27C139.676 215.147 139.477 215.147 139.354 215.27L137.575 217.049L135.796 215.27C135.673 215.147 135.474 215.147 135.351 215.27C135.229 215.393 135.229 215.592 135.351 215.714L137.353 217.716ZM137.261 204.717V217.493H137.89V204.717H137.261Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 37" d="M117.541 258.92C117.664 259.043 117.863 259.043 117.986 258.92L119.987 256.919C120.11 256.796 120.11 256.597 119.987 256.474C119.865 256.351 119.665 256.351 119.543 256.474L117.764 258.253L115.985 256.474C115.862 256.351 115.663 256.351 115.54 256.474C115.417 256.597 115.417 256.796 115.54 256.919L117.541 258.92ZM117.449 249.686V258.698H118.078V249.686H117.449Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 67" d="M177.919 301.373C178.042 301.496 178.241 301.496 178.364 301.373L180.365 299.372C180.488 299.249 180.488 299.05 180.365 298.927C180.242 298.804 180.043 298.804 179.92 298.927L178.141 300.706L176.362 298.927C176.239 298.804 176.04 298.804 175.918 298.927C175.795 299.05 175.795 299.249 175.918 299.372L177.919 301.373ZM177.827 286.792V301.151H178.456V286.792H177.827Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 61" d="M157.793 256.404C157.916 256.527 158.115 256.527 158.238 256.404L160.239 254.403C160.362 254.28 160.362 254.081 160.239 253.959C160.116 253.836 159.917 253.836 159.794 253.959L158.015 255.737L156.236 253.959C156.114 253.836 155.915 253.836 155.792 253.959C155.669 254.081 155.669 254.28 155.792 254.403L157.793 256.404ZM157.701 249.686V256.182H158.33V249.686H157.701Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 46" d="M147.952 312.264H147.638V312.579H147.952V312.264ZM148.175 307.639C148.052 307.516 147.853 307.516 147.73 307.639L145.729 309.641C145.606 309.763 145.606 309.962 145.729 310.085C145.852 310.208 146.051 310.208 146.174 310.085L147.952 308.306L149.731 310.085C149.854 310.208 150.053 310.208 150.176 310.085C150.299 309.962 150.299 309.763 150.176 309.641L148.175 307.639ZM169.022 311.95H147.952V312.579H169.022V311.95ZM148.267 312.264V307.862H147.638V312.264H148.267Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 47" d="M131.063 301.35C130.941 301.473 130.941 301.672 131.063 301.795L133.065 303.796C133.187 303.919 133.387 303.919 133.509 303.796C133.632 303.673 133.632 303.474 133.509 303.351L131.731 301.572L133.509 299.793C133.632 299.671 133.632 299.472 133.509 299.349C133.387 299.226 133.187 299.226 133.065 299.349L131.063 301.35ZM141.222 301.258H131.286V301.887H141.222V301.258Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 48" d="M131.915 312.24V311.926H131.6V312.24H131.915ZM131.692 318.611C131.815 318.734 132.014 318.734 132.137 318.611L134.138 316.61C134.261 316.487 134.261 316.288 134.138 316.166C134.016 316.043 133.816 316.043 133.694 316.166L131.915 317.944L130.136 316.166C130.013 316.043 129.814 316.043 129.691 316.166C129.568 316.288 129.568 316.487 129.691 316.61L131.692 318.611ZM147.86 311.926H131.915V312.555H147.86V311.926ZM131.6 312.24V318.389H132.229V312.24H131.6Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 49" d="M178.364 322.419C178.241 322.296 178.042 322.296 177.919 322.419L175.918 324.42C175.795 324.543 175.795 324.742 175.918 324.865C176.04 324.988 176.239 324.988 176.362 324.865L178.141 323.086L179.92 324.865C180.043 324.988 180.242 324.988 180.365 324.865C180.488 324.742 180.488 324.543 180.365 324.42L178.364 322.419ZM158.644 335.22C163.34 335.22 168.27 334.431 172.039 332.472C175.822 330.507 178.456 327.348 178.456 322.641H177.827C177.827 327.055 175.381 330.027 171.749 331.914C168.103 333.808 163.285 334.591 158.644 334.591V335.22Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 50" d="M131.915 334.996H131.6V335.311H131.915V334.996ZM145.54 335.219C145.663 335.096 145.663 334.897 145.54 334.774L143.539 332.773C143.416 332.65 143.217 332.65 143.094 332.773C142.971 332.895 142.971 333.094 143.094 333.217L144.873 334.996L143.094 336.775C142.971 336.898 142.971 337.097 143.094 337.22C143.217 337.343 143.416 337.343 143.539 337.22L145.54 335.219ZM131.6 331.761V334.996H132.229V331.761H131.6ZM131.915 335.311H145.318V334.682H131.915V335.311Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 54" d="M62.7323 52.8302V52.5157H62.4179V52.8302H62.7323ZM62.51 59.6563C62.6328 59.7791 62.8319 59.7791 62.9547 59.6563L64.9559 57.6551C65.0787 57.5323 65.0787 57.3332 64.9559 57.2104C64.8331 57.0876 64.634 57.0876 64.5112 57.2104L62.7323 58.9893L60.9534 57.2104C60.8306 57.0876 60.6315 57.0876 60.5087 57.2104C60.3859 57.3332 60.3859 57.5323 60.5087 57.6551L62.51 59.6563ZM95.4367 52.5157H62.7323V53.1447H95.4367V52.5157ZM62.4179 52.8302V59.434H63.0468V52.8302H62.4179Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 59" d="M137.575 243.711H137.261V244.025H137.575V243.711ZM150.691 243.933C150.813 243.81 150.813 243.611 150.691 243.488L148.689 241.487C148.566 241.364 148.367 241.364 148.245 241.487C148.122 241.61 148.122 241.809 148.245 241.932L150.023 243.711L148.245 245.49C148.122 245.612 148.122 245.812 148.245 245.934C148.367 246.057 148.566 246.057 148.689 245.934L150.691 243.933ZM137.261 238.679V243.711H137.89V238.679H137.261ZM137.575 244.025H150.468V243.396H137.575V244.025Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 60" d="M124.774 243.488C124.651 243.611 124.651 243.81 124.774 243.933L126.775 245.934C126.898 246.057 127.097 246.057 127.22 245.934C127.343 245.811 127.343 245.612 127.22 245.49L125.441 243.711L127.22 241.932C127.343 241.809 127.343 241.61 127.22 241.487C127.097 241.364 126.898 241.364 126.775 241.487L124.774 243.488ZM137.656 243.396H124.996V244.025H137.656V243.396Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 63" d="M157.701 281.132H157.386V281.446H157.701V281.132ZM170.816 281.354C170.939 281.232 170.939 281.032 170.816 280.91L168.815 278.908C168.692 278.786 168.493 278.786 168.37 278.908C168.248 279.031 168.248 279.23 168.37 279.353L170.149 281.132L168.37 282.911C168.248 283.034 168.248 283.233 168.37 283.356C168.493 283.478 168.692 283.478 168.815 283.356L170.816 281.354ZM157.386 276.101V281.132H158.015V276.101H157.386ZM157.701 281.446H170.594V280.818H157.701V281.446Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 64" d="M144.9 280.91C144.777 281.033 144.777 281.232 144.9 281.354L146.901 283.356C147.024 283.478 147.223 283.478 147.346 283.356C147.469 283.233 147.469 283.034 147.346 282.911L145.567 281.132L147.346 279.353C147.469 279.23 147.469 279.031 147.346 278.908C147.223 278.786 147.024 278.786 146.901 278.908L144.9 280.91ZM157.782 280.818H145.122V281.447H157.782V280.818Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 56" d="M46.0657 160.377H45.7512V160.692H46.0657V160.377ZM59.1811 160.6C59.3039 160.477 59.3039 160.278 59.1811 160.155L57.1799 158.154C57.0571 158.031 56.858 158.031 56.7351 158.154C56.6123 158.277 56.6123 158.476 56.7351 158.599L58.514 160.377L56.7351 162.156C56.6123 162.279 56.6123 162.478 56.7351 162.601C56.858 162.724 57.0571 162.724 57.1799 162.601L59.1811 160.6ZM45.7512 155.346V160.377H46.3801V155.346H45.7512ZM46.0657 160.692H58.9588V160.063H46.0657V160.692Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 57" d="M30.4345 160.155C30.3117 160.278 30.3117 160.477 30.4345 160.6L32.4357 162.601C32.5586 162.724 32.7577 162.724 32.8805 162.601C33.0033 162.478 33.0033 162.279 32.8805 162.156L31.1016 160.377L32.8805 158.598C33.0033 158.476 33.0033 158.277 32.8805 158.154C32.7577 158.031 32.5586 158.031 32.4357 158.154L30.4345 160.155ZM46.1467 160.063H30.6569V160.692H46.1467V160.063Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 58" d="M77.7346 160.914C77.8574 160.791 77.8574 160.592 77.7346 160.469L75.7333 158.468C75.6105 158.345 75.4114 158.345 75.2886 158.468C75.1658 158.591 75.1658 158.79 75.2886 158.913L77.0675 160.692L75.2886 162.471C75.1658 162.594 75.1658 162.793 75.2886 162.915C75.4114 163.038 75.6105 163.038 75.7333 162.915L77.7346 160.914ZM73.4242 161.006H77.5122V160.377H73.4242V161.006Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 62" d="M148.489 265.946C148.612 265.823 148.612 265.624 148.489 265.501L146.488 263.5C146.365 263.377 146.166 263.377 146.043 263.5C145.92 263.622 145.92 263.822 146.043 263.944L147.822 265.723L146.043 267.502C145.92 267.625 145.92 267.824 146.043 267.947C146.166 268.07 146.365 268.07 146.488 267.947L148.489 265.946ZM124.682 266.038H148.267V265.409H124.682V266.038Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 66" d="M148.54 269.967C148.626 269.816 148.573 269.624 148.422 269.538L145.962 268.139C145.811 268.053 145.619 268.106 145.533 268.257C145.447 268.408 145.5 268.6 145.651 268.686L147.838 269.929L146.595 272.116C146.509 272.267 146.562 272.459 146.713 272.545C146.863 272.631 147.055 272.578 147.141 272.427L148.54 269.967ZM123.193 277.033L148.35 270.115L148.184 269.508L123.026 276.426L123.193 277.033Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 65" d="M124.145 280.595C124.022 280.718 124.022 280.917 124.145 281.04L126.146 283.041C126.269 283.164 126.468 283.164 126.591 283.041C126.714 282.918 126.714 282.719 126.591 282.597L124.812 280.818L126.591 279.039C126.714 278.916 126.714 278.717 126.591 278.594C126.468 278.471 126.269 278.471 126.146 278.594L124.145 280.595ZM131.286 280.503H124.368V281.132H131.286V280.503Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 69" d="M94.1789 198.428H94.4933V198.113H94.1789V198.428ZM94.1789 287.421V287.736H94.4933V287.421H94.1789ZM31.6924 287.199C31.5696 287.322 31.5696 287.521 31.6924 287.644L33.6936 289.645C33.8164 289.768 34.0155 289.768 34.1383 289.645C34.2611 289.522 34.2611 289.323 34.1383 289.2L32.3595 287.421L34.1383 285.642C34.2611 285.52 34.2611 285.321 34.1383 285.198C34.0155 285.075 33.8164 285.075 33.6936 285.198L31.6924 287.199ZM86.9462 198.742H94.1789V198.113H86.9462V198.742ZM93.8644 198.428V287.421H94.4933V198.428H93.8644ZM94.1789 287.107H31.9147V287.736H94.1789V287.107Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 70" d="M188.833 197.17H189.147V196.855H188.833V197.17ZM188.833 345.283V345.597H189.147V345.283H188.833ZM20.2795 345.283H19.965V345.597H20.2795V345.283ZM20.5019 304.809C20.3791 304.686 20.18 304.686 20.0571 304.809L18.0559 306.81C17.9331 306.933 17.9331 307.132 18.0559 307.255C18.1787 307.378 18.3778 307.378 18.5006 307.255L20.2795 305.476L22.0584 307.255C22.1812 307.378 22.3803 307.378 22.5031 307.255C22.6259 307.132 22.6259 306.933 22.5031 306.81L20.5019 304.809ZM164.299 197.484H188.833V196.855H164.299V197.484ZM188.518 197.17V345.283H189.147V197.17H188.518ZM188.833 344.969H20.2795V345.597H188.833V344.969ZM20.594 345.283V305.031H19.965V345.283H20.594Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 71" d="M24.3676 334.906H24.0531V335.22H24.3676V334.906ZM24.5899 304.809C24.4671 304.686 24.268 304.686 24.1452 304.809L22.1439 306.81C22.0211 306.933 22.0211 307.132 22.1439 307.255C22.2668 307.378 22.4659 307.378 22.5887 307.255L24.3676 305.476L26.1464 307.255C26.2692 307.378 26.4684 307.378 26.5912 307.255C26.714 307.132 26.714 306.933 26.5912 306.81L24.5899 304.809ZM132.229 334.591H24.3676V335.22H132.229V334.591ZM24.682 334.906V305.031H24.0531V334.906H24.682Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 72" d="M102.82 253.774V253.459H102.505V253.774H102.82ZM102.82 292.138V292.453H103.134V292.138H102.82ZM31.6924 291.916C31.5696 292.039 31.5696 292.238 31.6924 292.361L33.6936 294.362C33.8164 294.485 34.0155 294.485 34.1383 294.362C34.2611 294.239 34.2611 294.04 34.1383 293.917L32.3595 292.138L34.1383 290.359C34.2611 290.237 34.2611 290.038 34.1383 289.915C34.0155 289.792 33.8164 289.792 33.6936 289.915L31.6924 291.916ZM117.764 253.459H102.82V254.088H117.764V253.459ZM102.505 253.774V292.138H103.134V253.774H102.505ZM102.82 291.824H31.9147V292.453H102.82V291.824Z" fill="#9897F9" fill-opacity="0.5"/>
+<path id="Vector 73" d="M138.204 287.736V292.138H102.984" stroke="#9897F9" stroke-opacity="0.5" stroke-width="0.628931"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="15.7233" height="15.7233" fill="white" transform="translate(14.3047 286.164)"/>
+</clipPath>
+</defs>
+</svg>
+			</div>
+		
+		
+		</section>		<section class='examples'>
+		    <div class='examples--steps' id=question data-js=question>
+		
+		        <h2>Do you have a unique question & can it be answered with data?</h2>
+		        <p class='prose'>Since these first two junctures go hand-in-hand, I'll address them together. At The Pudding, we tend to start our process of creating a data story with a question. This helps us scope the story, not get buried under the size of it, and to make sure that we can move on to the next question: finding data to help us answer our particular question. Every once in a while, we move forward stories that didn't specifically start with a question (like our <a href='https://pudding.cool/2018/11/boy-bands'>Internet Boy Band Database</a>), but we make a conscious decision to move that forward, forgoing the question aspect.</p>
+		        <p class='prose'>Once you've got a question in mind, figure out if it's unique. Has someone asked and answered this question? If not, continue on. If they have, can you tell the story in a new or different way? For instance, a few years ago we wrote a story about <a href='https://pudding.cool/2017/09/clinics'>access to abortion clinics</a> throughout the US. This is a story that has been told before, but we wanted to tell the story using new data: driving times to abortion clinics. Because this was a new angle, we considered it a "unique" question and moved forward.</p>
+		        <p class='prose'>Next, our question needs to be able to be answered with data. In our story about the <a href='https://pudding.cool/2018/08/pockets/'>ineffectiveness of women's pockets</a>, Jan and I could have started with a question like "why are women's pockets so small?". That technically is a question, but it is one that is harder to answer with data. Reframing the question to "how much smaller are women's pockets than men's?" or "are women's jean pockets smaller than men's across the board?" gives us a question that can be answered by data and allows us to move forward.</p>
+		
+		        <h3>Stories we’ve scrapped at this stage:</h3>
+		        <ul>
+		            <li class='story'>I've had "fairytales?" written in my backlog for 2 years now. Someday I'll come up with a good question to ask about fairytales…</li>
+		            <li class='story'>Team speedruns, maybe add a bit of that story here?</li>
+		        </ul>
+		
+		
+		    </div>
+		    <div class='examples--steps' id=exist data-js=exist>
+		
+		        <h2>Do the data exist?</h2>
+		        <p class='prose'>There are many sources of open, available data that exist on the internet. Things like <a href='https://www.kaggle.com/'>kaggle</a> and<a href='http://data.world/'> </a><a href='http://data.world/'>data.world</a> provide a wide variety of datasets. There are also things (US-based) like the <a href='https://www.cdc.gov/datastatistics/index.html'>CDC</a> or other government data for your country, state, or city. Sometimes, these sources work well and can effectively be used to answer the question we had (check out our use of CDC data in this story about <a href='https://pudding.cool/2018/07/birth_control'>birth control</a> or our use of Chicago prosecution data in a story about <a href='https://pudding.cool/2019/10/prosecutors'>Kim Foxx</a>).</p>
+		        <p class='prose'>But, sometimes pre-existing data sources don't help you answer your question. When you use data for a purpose other than the one it was collected for, you need to assess whether your use and interpretation of the data is accurate. Sometimes you can change your question to fit the data. But otherwise, in these cases where pre-exiting data won't work for you, you may be able to collect your own data. We create our own datasets frequently. Sometimes, we can create datasets from open sources like Wikipedia (check out several of <a href='https://pudding.cool/2018/08/wiki-death'>our</a> <a href='https://pudding.cool/2018/09/wiki-billboard'>stories</a> <a href='https://pudding.cool/2018/10/wiki-breakout'>that</a> <a href='https://pudding.cool/2019/05/people-map'>utilize</a> Wiki data) or <a href='https://pudding.cool/2020/05/travel-local'>TripAdvisor</a>.</p>
+		        <p class='prose'>Other times we need to manually collect the data ourselves. To find out how much smaller women's pockets are than men's, Jan and I physically went to stores to <a href='https://pudding.cool/2018/08/pockets'>measure pockets</a> and recorded our <a href='https://github.com/the-pudding/data/tree/master/pockets'>results</a>. To find the appearance of each <a href='https://pudding.cool/2018/11/boy-bands'>boyband member</a> in their band's music video, we enlisted the help of several volunteers to watch each music video and record <a href='https://github.com/the-pudding/data/tree/master/boybands'>specific details</a> about each person. Two other editorial assistants and I manually read through hundreds of high school <a href='https://pudding.cool/2019/02/dress-code-sexualization'>dress codes</a> to figure out which <a href='https://github.com/the-pudding/data/tree/master/dress_codes'>items were prohibited</a> in schools nationwide. Manually collecting data can be time consuming and the data may not pan out the way you expect, so be prepared to sink a lot of time here if you go this route.</p>
+		
+		        <h3>Stories we’ve scrapped at this stage:</h3>
+		        <ul>
+		            <li class='story'>Russell had pitched an idea about the use of bananas in cookbook recipes over time. Unfortunately, after lots of digging, we could only find either modern (within the last 10 years or so) or very old (pre-1900's) cookbooks that were digitized. Many of these didn't have data in a usable or structured format and we lost an entire century of data. Without these data, it didn't make sense to move the story forward.</li>
+		        </ul>
+		
+		
+		    </div>
+		    <div class='examples--steps' id=ethical data-js=ethical>
+		
+		        <h2>Is it ethical to collect or use these data?</h2>
+		        <p class='prose'>This is a tricky one to define.<a href='https://towardsdatascience.com/web-scraping-is-now-legal-6bf0e5730a78'> </a><a href='https://towardsdatascience.com/web-scraping-is-now-legal-6bf0e5730a78'>Legally</a>, any data that is publicly available can be scraped or collected. There are some caveats (e.g., not for unlimited commercial use, not on sites that require authentication, not copyrighted creative content like photos or videos etc.), but otherwise in the US, this is typically considered fair use.</p>
+		        <p class='prose'>That being said, there are plenty of data that can be collected and used <em>legally</em> but <em>ethically</em> probably shouldn't be collected or used. For instance, as the COVID-19 pandemic continues worldwide, a public health professional has<a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'> </a><a href='https://medium.com/nightingale/ten-considerations-before-you-create-another-chart-about-covid-19-27d3bd691be8'>asked</a> the data visualization community to "#vizresponsibly - which may mean not publishing your visualizations in the public domain at all". Even though a lot of data on this topic are publicly available, it is very easy to mislead or not fully understand such complex data in an ever-evolving situation. And if you do move it forward, keep in mind the ethics of your story and presentation choices as your work may have<a href='https://medium.com/nightingale/with-great-visualization-comes-great-responsibility-a863916d65c7'> </a><a href='https://medium.com/nightingale/with-great-visualization-comes-great-responsibility-a863916d65c7'>unintended consequences.</a></p>
+		
+		        <h3>Stories we’ve scrapped at this stage:</h3>
+		        <ul>
+		            <li class='story'>Florida Man. The idea that there is always someone in Florida doing something seemingly silly is a strong one in the US and we had a few ideas that we considered pursuing along this topic. The data (news headlines & articles) were open and available to us for use. But after investigating the issue and finding that the Florida Man stereotype only existed because of transparency laws in Florida and is at its<a href='https://soundcloud.com/citationsneeded/episode-75-florida-man'> </a><a href='https://soundcloud.com/citationsneeded/episode-75-florida-man'>core</a> an "anti-poor, mental health-shaming" meme, we decided to scrap the story.</li>
+		        </ul>
+		
+		
+		    </div>
+		    <div class='examples--steps' id=results data-js=results>
+		
+		        <h2>Are the results of the analysis interesting?</h2>
+		        <p class='prose'>So, at this point, you have a question that can be answered by data. You've collected the data, analyzed it, and you (hopefully) have some sort of answer to your question. Here comes the tricky part: is this interesting? Was the answer surprising? Or what you expected? Would someone else be interested in hearing you talk about what you found (if you're unsure, try talking to someone about it). Here are a few examples that may help you figure out how we treat this crossroads:</p>
+		
+		        <h3>Stories we <em>almost</em> scrapped at this stage:</h3>
+		        <ul>
+		            <li class='story'>Our <a href='https://pudding.cool/2019/06/summer-reading'>Hipster Summer Reading List</a> originally started as a question about which books from libraries are the most checked out. We wanted to know if the most popular 1% of books made up for 90% of check-outs or something similar. We used open-source <a href='https://data.seattle.gov/dataset/Checkouts-by-Title-Physical-Items-/3h5r-qv5w'>check-out data</a> from the Seattle Public Library, <a href='https://github.com/the-pudding/data'>analyzed it</a>, and found that 20% of checkouts were due to the most popular 1% of books. Which... is kinda interesting? We played with several questions here and <em>almost</em> scrapped the story before deciding to flip the question on its head and ask "which books haven't been checked out in decades?" Framing it as a reading list for people who want the books no one is reading gave it the spark that we were looking for.</li>
+		            <li class='story'>One of our most engaging stories, a <a href='https://pudding.cool/2018/02/stand-up'>deep dive into Ali Wong's comedy routine</a>, was <em>almost</em> scrapped at this stage. In fact, it was actually put down for about a year between the manual data collection and moving past this stage because figuring out how to frame the data in an interesting way was harder than anticipated. [ADD MORE HERE]</li>
+		        </ul>
+		
+		        <h3>Stories we <em>did</em> scrap at this stage:</h3>
+		        <ul>
+		            <li class='story'>I tease my partner often about how his wardrobe is like that of Lego Batman; it only consists of black, and very, very dark gray. After stumbling upon a<a href='https://www.notion.so/thepudding/Why-men-only-wear-black-and-really-really-dark-gray-905f200bb305463ea23f1e32c779ac8c#a4906b53bce543e8b9c0be69067205a4'> </a><a href='https://www.notion.so/thepudding/Why-men-only-wear-black-and-really-really-dark-gray-905f200bb305463ea23f1e32c779ac8c#a4906b53bce543e8b9c0be69067205a4'>Twitter thread</a> lamenting over the blandness that is men's wardrobe, I was curious about whether this was an issue at the pipeline (i.e., stores don't sell colorful clothes for men) or from the buyer (i.e., men don't buy colorful clothes, even when offered). I decided to find the color options for the top 600 best selling t-shirts for men and women on<a href='http://macys.com/'> </a><a href='http://macys.com/'>Macys.com</a> and found... really no huge difference in what is being offered. The findings felt bland and uninteresting, so we said goodbye to this piece.</li>
+		        </ul>
+		
+		
+		    </div>
+		    <div class='examples--steps' id=right data-js=right>
+		
+		        <h2>Are you the right person to tell this story?</h2>
+		        <p class='prose'>Like the question about the ethical use of data in storytelling, this is a difficult one to define. Generally it boils down to, "is this your story to tell?" This doesn't mean that you have to be an expert in every single thing you ever write about. But, it does mean that if your question is about something outside of your own lived experience and/or area(s) of expertise, you may not be asking the right question or have the right framing to tell this story. While it would have been better to involve an expert or someone with the lived experience you are describing earlier in the story-writing process, this point is absolutely the latest these things should be considered. Your story is still flexible enough to change here.</p>
+		
+		        <h3>Stories we’ve paused at this stage:</h3>
+		        <ul>
+		            <li class='story'>A few years ago, I was working on a story about <a href='https://pudding.cool/2019/02/dress-code-sexualization'>high school dress codes</a>. My first few drafts included how dress codes sexualize students and how they target BIPOC students and LGBTQIA students. But as I wrote the story, a few things became apparent. First, this was way too much to fit in one story without glossing over important details. Second, was that I (as a cis-gender, white woman) had life experience feeling sexualized at a young age by my school's dress code. But I couldn't speak to what it would be like to be a BIPOC or LGBTQIA student experiencing school dress codes as they are written. I had the data and technically could have written these stories as well, but it wasn't my place nor my story to tell. I consider these stories paused, not scrapped, since we would still love to pick them back up with the right collaborator(s).</li>
+		        </ul>
+		
+		
+		    </div>
+		    <div class='examples--steps' id=plan data-js=plan>
+		
+		        <h2>Create a plan for your story; is it still interesting?</h2>
+		        <p class='prose'>Sometimes the results that you've found are interesting, but it's hard finding the right way to present them. At The Pudding, we often use storyboards to roughly sketch out how we want our story to go. Then, we share the storyboards with our team, seeing if other people find the flow of information and our planned presentation of the data engaging. Sometimes, the frame just isn't right, but it can be fixed. Other times, there may not be a good frame for it.</p>
+		
+		        <h3>Stories we’ve pivoted at this stage:</h3>
+		        <ul>
+		            <li class='story'>In telling a story about the <a href='https://pudding.cool/2018/01/mars-weather/'>weather on Mars</a>, my initial storyboard was designed as a faux welcome packet for humans hoping to live there. But when presented to the team, the idea felt flat. Wouldn't residents have already known about the weather before going there? Without a point of comparison, these numbers lose their interest. Instead, I decided to frame the same data around imagined post cards sent to Earth from the Curiosity rover on Mars. Curiosity could then explain the weather on Mars using the reader's location for a point of comparison. Even though the data and question remained the same, the pivot in story frame saved this story from being scrapped.</li>
+		        </ul>
+		
+		
+		    </div>
+		    <div class='examples--steps' id=make data-js=make>
+		
+		        <h2>Make the thing; is it still interesting?</h2>
+		        <p class='prose'>This is our last checkpoint before a story gets published. It's actually pretty rare for us to scrap a story at this phase because in order to get here, a story has gone through several other checkpoints and each time we decided to keep moving it forward. In short, this stage involves reflecting on your final piece ensuring that your question is answered clearly, your data are robust, and the flow and presentation of information make sense and draw the reader in. If they don't, hopefully it's something that can be fixed up.</p>
+		
+		        <h3>Stories we’ve scrapped at this stage:</h3>
+		        <ul>
+		            <li class='story'>Shortly after quarantine began in March, I started noticing that Netflix uses the word "irreverent" to describe shows very frequently. It piqued my curiosity enough that I collected data looking at descriptive tags used for over 100 titles on the platform and found that irreverent was the second most common tag used. A small story, certainly, but it was interesting and intriguing enough for me to move it forward. My problem was that I took too long to publish it. I sat on the story for various reasons, but by the time I felt ok publishing it in June, the story lost all of the things that made it interesting. People were still quarantining, but not as much, nor as vigilantly. Netflix had stopped promoting as many comedies and was promoting more "heartfelt" stories. Our stories don't typically rely on timeliness, but this one did and it missed its window. The data and story became stale and in the end, I decided to scrap it (and write this blog post instead).</li>
+		        </ul>
+		
+		
+		    </div>
+		</section>
+	</main>
+
+	<footer class='pudding-footer'>
+	
+		<div class='footer-recirc'>
+			<div class='footer-recirc__articles'></div>
+		</div>
+	
+		<div class='footer-company'>
+			<div class='footer-company__cta'>
+				<ul class='footer-company__cta-list'>
+					<li>
+						<a href='https://facebook.com/pudding.viz/'>
+							<svg width="24" height="24" fill="#000000" stroke="currentColor" stroke-width=".2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+							<p>FACEBOOK</p>
+						</a>
+					</li>
+					<li>
+						<a href='https://twitter.com/puddingviz/'>
+							<svg width="24" height="24" fill="#000" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+							<p>TWITTER</p>
+						</a>
+					</li>
+					<li>
+						<a href='https://www.instagram.com/the.pudding'>
+							<svg width="24" height="24" id="Layer_1" x="0px" y="0px" enable-background="new 0 0 24 24" xml:space="preserve" viewBox="0 0 24 24">
+<path d="M17,23H7c-3.3,0-6-2.7-6-6V7c0-3.3,2.7-6,6-6h10c3.3,0,6,2.7,6,6v10C23,20.3,20.3,23,17,23z M7,3C4.8,3,3,4.8,3,7v10
+	c0,2.2,1.8,4,4,4h10c2.2,0,4-1.8,4-4V7c0-2.2-1.8-4-4-4H7z"/>
+<path d="M12,17c-1.1,0-2.1-0.3-3-1c-1.1-0.8-1.8-2-2-3.3C6.7,10,8.6,7.4,11.3,7c0.5-0.1,1-0.1,1.5,0c2.2,0.3,3.9,2,4.2,4.2l0,0
+	c0.2,1.3-0.1,2.6-0.9,3.7c-0.8,1.1-2,1.8-3.3,2C12.5,16.9,12.3,17,12,17z M12,9c-0.1,0-0.3,0-0.4,0c-1.6,0.2-2.8,1.8-2.5,3.4
+	c0.2,1.6,1.8,2.8,3.4,2.5c0.8-0.1,1.5-0.5,2-1.2s0.7-1.4,0.6-2.2l0,0c-0.2-1.3-1.2-2.3-2.5-2.5C12.3,9,12.2,9,12,9z"/>
+<path d="M17.5,7.5c-0.3,0-0.5-0.1-0.7-0.3c-0.1-0.1-0.2-0.2-0.2-0.3c-0.1-0.1-0.1-0.2-0.1-0.4c0-0.3,0.1-0.5,0.3-0.7
+	c0.4-0.4,1-0.4,1.4,0c0.2,0.2,0.3,0.4,0.3,0.7c0,0.1,0,0.3-0.1,0.4s-0.1,0.2-0.2,0.3C18,7.4,17.8,7.5,17.5,7.5z"/>
+</svg>
+							<p>INSTAGRAM</p>
+						</a>
+					</li>
+					<li>
+						<a href='https://patreon.com/thepudding/'>
+							<svg id="Layer_1" width="24" height="24" x="0px" y="0px" enable-background="new 0 0 24 24" xml:space="preserve" viewBox="0 0 24 24">
+<g>
+
+		<path fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" d="
+		M15.7,3.3c-3.7,0-6.8,3-6.8,6.8c0,3.7,3,6.7,6.8,6.7c3.7,0,6.7-3,6.7-6.7C22.4,6.3,19.4,3.3,15.7,3.3"/>
+
+		<rect x="3.7" y="3.3" stroke-linecap="round" stroke-linejoin="round" width="3.3" height="18"/>
+</g>
+</svg>
+							<p>PATREON</p>
+						</a>
+					</li>
+					<li>
+						<a href='https://pudding.cool/about'>
+							<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="8"></line></svg>
+							<p>ABOUT</p>
+						</a>
+					</li>
+					<li>
+						<a href='https://pudding.cool/privacy/'>
+							<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+							<p>PRIVACY</p>
+						</a>
+					</li>
+					<li>
+						<a href='http://eepurl.com/czym6f'>
+							<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+							<p>NEWSLETTER</p>
+						</a>
+					</li>
+					<li>
+						<a href='https://pudding.cool/feed/index.xml'>
+							<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss" viewBox="0 0 24 24"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg>
+							<p>RSS</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+	
+			<div class='footer-company__about'>
+				<svg id="wordmark" x="0px" y="0px" style="enable-background:new 0 0 192.6 50;" xml:space="preserve" viewBox="0 0 192.6 50">
+<g>
+	<path class="st0" d="M150.1,9.5c1.5,0,2.8,1.3,2.8,2.8s-1.3,2.8-2.8,2.8s-2.8-1.3-2.8-2.8S148.6,9.5,150.1,9.5z"/>
+	<path class="st0" d="M147.2,17.3h5.6v18.2h-5.6V17.3z"/>
+	<path class="st0" d="M77.1,9.5h-1.9h-7v19.3v6.7h5.6v-6.7v-1.4h1.4h1.9c4.9,0,8.9-4,8.9-8.9S82.1,9.5,77.1,9.5z M77.1,21.8h-1.9
+		h-1.4v-1.4v-3.8v-1.4h1.4h1.9c1.8,0,3.3,1.5,3.3,3.3S79,21.8,77.1,21.8z"/>
+	<path class="st0" d="M105.7,17.6h-5.6v8.9c0,1.8-1.5,3.3-3.3,3.3s-3.3-1.5-3.3-3.3v-8.9h-5.6v8.9c0,4.9,4,8.9,8.9,8.9
+		s8.9-4,8.9-8.9V17.6z"/>
+	<path class="st0" d="M164.1,17.6c-4.9,0-8.9,4-8.9,8.9v8.9h5.6v-8.9c0-1.8,1.5-3.3,3.3-3.3s3.3,1.5,3.3,3.3v8.9h5.6v-8.9
+		C173,21.6,169,17.6,164.1,17.6z"/>
+	<path class="st0" d="M119.7,16.2v1.4h-1.4h-1.9c-4.9,0-8.9,4-8.9,8.9s4,8.9,8.9,8.9h1.9h7V16.2V9.5l-5.6,3.3
+		C119.7,12.8,119.7,16.2,119.7,16.2z M119.8,24.6v3.8v1.4h-1.4h-1.9c-1.8,0-3.3-1.5-3.3-3.3s1.5-3.3,3.3-3.3h1.9h1.4V24.6z"/>
+	<path class="st0" d="M139.3,16.2v1.4h-1.4H136c-4.9,0-8.9,4-8.9,8.9s4,8.9,8.9,8.9h1.9h7V16.2V9.5l-5.6,3.3V16.2z M139.4,24.6v3.8
+		v1.4h-1.5H136c-1.8,0-3.3-1.5-3.3-3.3s1.5-3.3,3.3-3.3h1.9h1.4v1.4H139.4z"/>
+	<path class="st0" d="M183.7,17.6c-4.9,0-8.9,4-8.9,8.9s4,8.9,8.9,8.9h1.9h1.4v1.4v0.9v1.4v1.4c0,1.8-1.5,3.3-3.3,3.3
+		s-3.3-1.5-3.3-3.3V38l-5.6,3.3c0.4,4.5,4.2,8.1,8.9,8.1c4.9,0,8.9-4,8.9-8.9v-1.4v-2.3V17.6h-7H183.7z M187,23.4v1.4v3.8V30h-1.4
+		h-1.9c-1.8,0-3.3-1.5-3.3-3.3s1.5-3.3,3.3-3.3h1.9C185.6,23.4,187,23.4,187,23.4z"/>
+	<path class="st0" d="M28.6,17.6c-1.2,0-2.3,0.2-3.3,0.6V9.5l-5.6,3.3v13.7v2v6.9h5.6v-6.9l0,0v-2c0-1.8,1.5-3.3,3.3-3.3
+		s3.3,1.5,3.3,3.3v8.9h5.6v-8.9C37.5,21.6,33.5,17.6,28.6,17.6z"/>
+	<path class="st0" d="M17.8,9.5H0v5.6h6.1v20.3h5.6V15.1h6.1V9.5z"/>
+	<path class="st0" d="M48.3,30.2c-0.4,0-1.2-0.1-1.8-0.4l5.2-2.1l5.6-2.3l-1-2.3l-0.1-0.2c-0.1-0.3-0.3-0.6-0.5-1
+		c-0.1-0.1-0.1-0.2-0.2-0.3c0,0,0-0.1-0.1-0.1l-0.1-0.1l-0.1-0.1c-1.6-2.2-4-3.5-6.7-3.7l0,0h-0.6c-4.9,0-8.9,4-8.9,8.9
+		c0,0.4,0,0.9,0.1,1.4l0,0V28c0,0,0,0,0,0.1c0,0,0,0,0,0.1c0,0.3,0.1,0.5,0.2,0.8v0.1v0.1c0.1,0.3,0.2,0.7,0.4,1v0.1v0.1
+		c0.1,0.3,0.3,0.5,0.4,0.8c0,0.1,0.1,0.1,0.1,0.2l0,0c0.1,0.2,0.3,0.4,0.4,0.6c0,0,0,0,0,0.1c0,0,0,0.1,0.1,0.1l0.1,0.1
+		c1.7,2.1,4.4,3.4,7.2,3.4h6.1v-5.2C54.5,30.2,50.6,30.2,48.3,30.2L48.3,30.2z M56.2,22.9L56.2,22.9L56.2,22.9z M44.6,25.7
+		L44.6,25.7l-0.2,0.1c0.2-1.9,1.8-3.5,3.7-3.5c0.9,0,1.8,0.4,2.4,0.9L46.2,25L44.6,25.7L44.6,25.7z"/>
+</g>
+</svg>
+				<p class='footer-company__description'><a href='https://pudding.cool'>The Pudding</a> is a digital publication
+					that
+					explains ideas debated in culture with visual essays.</p>
+				<p class='footer-company__trademark'>The Pudding<span>®</span> is made in Brooklyn, NY; Seattle, WA; San Antonio,
+					TX; and Great
+					Barrington, MA.</p>
+			</div>
+	
+		</div>
+	</footer>
+
+
+	<script src='https://pudding.cool/assets/scripts/d3.v5.12.0.min.js'></script>
+	<script src='main.js?version=1595544650147' async></script>
+</body>
+
+</html>

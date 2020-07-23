@@ -13,12 +13,6 @@ $sections.each((d, i, node) => {
   circleMap.push(section);
 });
 
-function handleEnterView() {
-  const sel = d3.select(this);
-  // const section = sel.attr('data-js');
-  console.log({ sel });
-}
-
 function setupEnterView() {
   enterView({
     selector: $sections.nodes(),
@@ -44,11 +38,26 @@ function setupEnterView() {
   });
 }
 
+function handleClick() {
+  const $sel = d3.select(this);
+  $circles.style('opacity', 0.3);
+  $sel.style('opacity', 1);
+  const section = $sel.attr('id');
+  if (section == 'question' || section == 'data') {
+    d3.select(`[data-js="question"]`).nodes()[0].scrollIntoView(false);
+  } else {
+    const text = d3.select(`[data-js="${section}"]`).nodes()[0];
+    console.log({ text });
+    text.scrollIntoView(false);
+  }
+}
+
 function resize() {}
 
 function init() {
   $circles.style('opacity', 0.3);
   setupEnterView();
+  $circles.on('click', handleClick);
 }
 
 export default { init, resize };

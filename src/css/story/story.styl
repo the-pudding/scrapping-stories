@@ -1,4 +1,28 @@
 /* CUSTOM STORY STYLE */
+h1 
+    set-type-size('xxxxx-large')
+    font-weight 700
+    font-family $tiempos
+    color $primary
+    line-height 1
+    max-width $column-width
+
+.intro__dek 
+    font-family $national
+    set-type-size('x-large')
+    margin-top 2rem
+
+.intro__row 
+    display flex 
+    flex-direction row 
+    max-width $column-width
+    margin 1rem auto 4rem
+    justify-content space-between
+    p, time 
+        font-family $national-narrow 
+        margin 0
+        padding 0 1rem
+
 h2, h3
     max-width $column-width
     font-weight 700
@@ -6,7 +30,13 @@ h2, h3
     padding 0 1rem
     text-align left
 
+h2 
+    color $primary
+    set-type-size('xx-large')
 
+h3 
+    set-type-size('large')
+    margin-top 3rem
 
 ul 
     max-width $column-width 
@@ -16,7 +46,15 @@ ul
 li 
     margin 1rem 0
     line-height 1.65
-    list-style-type: circle
+    list-style-type: none 
+
+    &::before 
+        content '\2022'
+        color $primary
+        font-weight bold
+        display inline-block 
+        width 1em
+        margin-left -1em
 
 .flowchart 
     max-width 900px
@@ -29,8 +67,19 @@ svg
         font-family $national-narrow
 
 .minimap 
+    display none 
     position fixed 
     border-radius 5px
     top 50px
     left 0
     box-shadow -3px 5px 17px #C8C8C8
+    transform translate(-200px, 0)
+    transition transform 300ms ease-in-out
+    +mq('bp-6')
+        display block
+    &.is-visible 
+        transform translate(0, 0)
+        transition transform 300ms ease-in-out
+
+.examples--steps 
+    margin-top 5rem

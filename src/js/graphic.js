@@ -20,9 +20,9 @@ function setupEnterView() {
       const section = d3.select(el).attr('data-js');
       $circles.style('opacity', 0.3);
       if (section === 'question') {
+        $minimap.classed('is-visible', true);
         $circleGroup.selectAll('#question, #data').style('opacity', 1);
       } else $circleGroup.select(`#${section}`).style('opacity', 1);
-      console.log({ circleMap });
     },
     exit: (el, i) => {
       const section = d3.select(el).attr('data-js');
@@ -31,8 +31,9 @@ function setupEnterView() {
       const prevSection = circleMap[thisI - 1];
       if (section === 'exist') {
         $circleGroup.selectAll('#question, #data').style('opacity', 1);
+      } else if (section === 'question') {
+        $minimap.classed('is-visible', false);
       } else $circleGroup.select(`#${prevSection}`).style('opacity', 1);
-      console.log({ exiting: section, i });
     },
     once: false,
   });

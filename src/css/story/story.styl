@@ -43,18 +43,20 @@ ul
     margin 0 auto 
     padding 0 1rem
 
-li 
-    margin 1rem 0
-    line-height 1.65
-    list-style-type: none 
+.examples 
+    li 
+        margin 1rem 0
+        padding 0 1rem
+        line-height 1.65
+        list-style-type: none 
 
-    &::before 
-        content '\2022'
-        color $primary
-        font-weight bold
-        display inline-block 
-        width 1em
-        margin-left -1em
+        &::before 
+            content '\2022'
+            color $primary
+            font-weight bold
+            display inline-block 
+            width 1em
+            margin-left -1em
 
 .flowchart 
     max-width 900px
@@ -62,9 +64,12 @@ li
     padding 0 1rem
 
 
-svg 
-    tspan   
-        font-family $national-narrow
+    svg 
+        width calc(100vw - 4rem)
+        max-width 900px
+        height auto
+        tspan   
+            font-family $national-narrow
 
 .minimap 
     display none 
@@ -83,3 +88,29 @@ svg
 
 .examples--steps 
     margin-top 5rem
+
+.conclusion 
+    margin 3rem 0
+
+
+.resources 
+    border-top 1px solid $off-black
+    padding 3rem 0
+    h2 
+        set-type-size('x-large')
+        color $off-black
+    h3 
+        set-type-size('root')
+        margin-top 1rem
+    li
+        set-type-size('small')
+        padding 0 1rem
+        font-family $national
+        margin-top 0.25rem
+        &::before 
+            content '\2022'
+            color $primary
+            font-weight bold
+            display inline-block 
+            width 1em
+            margin-left -1em

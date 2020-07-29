@@ -1,0 +1,26 @@
+<section class='resources'>
+    <h2> {{{doc.resourceTitle}}}</h2>
+    <p class='prose'>{{{doc.policies}}}</p>
+    <h3 class='resources--title'>Blog Posts</h3>
+    <ul class='resource resource--blogs'>
+        {{#each doc.blogs}}
+        <li>{{{this}}}</li>
+        {{/each}}
+    </ul>
+
+    <h3 class='resources--title'>Talks & Courses</h3>
+    <ul class='resource resource--talks'>
+        {{#each doc.talks}}
+        <li>{{{this}}}</li>
+        {{/each}}
+    </ul>
+
+    <h3 class='resources--title'>Videos</h3>
+    <ul class='resource resource--videos'>
+        {{#each doc.videos}}
+        <li>{{{this}}}</li>
+        {{/each}}
+    </ul>
+
+
+</section>

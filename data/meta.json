@@ -3,15 +3,15 @@
 	"description": "The Pudding's process to go from idea to data story",
 	"site": "https://pudding.cool",
 	"siteName": "The Pudding",
-	"url": "https://pudding.cool/year/month/name/",
-	"keywords": "tk",
-	"imgFacebook": "https://pudding.cool/year/month/name/assets/social/social-facebook.jpg",
-	"imgTwitter": "https://pudding.cool/year/month/name/assets/social/social-twitter.jpg",
+	"url": "https://pudding.cool/process/pivot-continue-down/",
+	"keywords": "process, writing, data story",
+	"imgFacebook": "https://pudding.cool/process/pivot-continue-down/assets/social/social-facebook.jpg",
+	"imgTwitter": "https://pudding.cool/process/pivot-continue-down/assets/social/social-twitter.jpg",
 	"author": {
 		"name": "Amber Thomas",
 		"url": "https://pudding.cool/author/amber-thomas",
 		"twitterHandle": "@proquesasker"
 	},
-	"analytics": "",
+	"analytics": "UA-90567923-1",
 	"lorem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis neque sit amet sollicitudin vehicula. Maecenas fringilla mi non lacus mattis elementum. Curabitur dignissim faucibus justo."
 }
